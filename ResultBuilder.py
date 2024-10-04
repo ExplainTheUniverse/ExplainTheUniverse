@@ -126,8 +126,8 @@ for markdown_file in markdown_files:
     result = apply_template(template_content, ai_name, prompts)
     
     # Generate output HTML filename
-    output_filename = os.path.basename(markdown_file).replace('.md', '.html')
-    output_path = os.path.join('Site/pt', output_filename)
+    output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('resultado-', '')
+    output_path = os.path.join('Site/pt/resultados', output_filename)
     
     # Skip writing if the output file is resultado-template.html
     if output_filename != 'resultado-template.html':
@@ -150,8 +150,8 @@ for markdown_file in markdown_files:
     result = apply_template(template_content, ai_name, prompts, True)
     
     # Generate output HTML filename
-    output_filename = os.path.basename(markdown_file).replace('.md', '.html')
-    output_path = os.path.join('Site', output_filename)
+    output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('result-', '')
+    output_path = os.path.join('Site/results', output_filename)
     
     # Skip writing if the output file is result-template.html
     if output_filename != 'result-template.html':
