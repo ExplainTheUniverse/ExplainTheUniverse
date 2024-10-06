@@ -11,6 +11,7 @@ def md_to_html(md_content):
     html = re.sub(r'<h1>(.*?)</h1>', r'<h1 class="text-3xl font-bold mb-6">\1</h1>', html)
     html = re.sub(r'<h2>(.*?)</h2>', r'<h2 class="text-2xl font-semibold mb-4">\1</h2>', html)
     html = re.sub(r'<h3>(.*?)</h3>', r'<h3 class="text-xl font-semibold mt-6 mb-2">\1</h3>', html)
+    html = re.sub(r'<h4>(.*?)</h4>', r'<h4 class="text-l font-semibold mt-6 mb-2">\1</h4>', html)
     
     # Add classes to paragraphs
     html = re.sub(r'<p>(.*?)</p>', r'<p class="mb-4">\1</p>', html)
@@ -20,6 +21,9 @@ def md_to_html(md_content):
     html = re.sub(r'<ol>', r'<ol class="list-decimal pl-6 mb-4">', html)
     html = re.sub(r'<li>(.*?)</li>', r'<li class="mb-2">\1</li>', html)
     
+    # <a href="detailed-analysis.html" class="text-blue-600 hover:text-blue-800 underline font-semibold">
+    html = re.sub(r'<a href="(.*?)">(.*?)</a>', r'<a href="\1" class="text-blue-600 hover:text-blue-800 underline" >\2</a>', html)
+
     return html
 
 def create_main_html(html_content):
@@ -38,7 +42,7 @@ def create_main_html(html_content):
     main_html += '</main>'
     return main_html
 
-fnames = ["Site/pt/data/analise-conclusoes", "Site/data/analysis-conclusions"]
+fnames = ["Site/pt/data/analise-conclusoes", "Site/data/analysis-conclusions", "Site/data/detailed-analysis"]
 
 for fname in fnames:
 
