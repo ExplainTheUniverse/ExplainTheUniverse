@@ -1,4 +1,4 @@
-# Detailed Analysis
+# In-Depth Analysis
 
 This analysis examines the responses from multiple AI models to the challenge of creating a metaphysical theory of the universe. We'll explore common themes, frequently mentioned individuals, and key concepts that emerged across the responses.
 
@@ -21,9 +21,7 @@ This approach ensures a level playing field for all models and allows for direct
 
 ## Frequency Analysis
 
-In our examination of the AI responses to the challenge of creating a metaphysical theory of the universe, we conducted a frequency analysis to identify the most commonly mentioned individuals, works, and papers across all models. This analysis helps us understand which ideas and thinkers have had the most significant influence on the AI-generated theories.
-
-Below, we present the most frequently mentioned philosophers, scientists, books, and papers. This data provides insight into the intellectual foundations underpinning the AI-generated metaphysical theories.
+We analyzed mentions of individuals, works, and papers across AI responses to identify key influences on the generated theories. Here are the most frequently cited:
 
 ### Philosophers Mentioned
 
@@ -70,7 +68,7 @@ This frequency analysis provides a foundation for understanding the intellectual
 
 ## Recurring Concepts
 
-In analyzing the responses from the five AI models, we identified recurring themes and ideas, which we have organized into concept clusters. These clusters represent the key metaphysical concepts that emerged across multiple AI responses. We have grouped these concepts into five overarching themes for easier comprehension. Each concept is presented with the percentage of AI models that mentioned it, a brief description, and relevant extracts from the AI responses.
+We identified recurring themes across the five AI responses and organized them into concept clusters. These are grouped under five overarching themes. Each concept is presented with the percentage of AI models that mentioned it, a brief description, and relevant extracts from the AI responses.
 
 ### I. Nature of Reality
 

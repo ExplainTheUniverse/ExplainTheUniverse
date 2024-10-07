@@ -37,7 +37,12 @@ def create_main_html(html_content):
     # Process the rest of the sections
     for section in sections:
         section = '<h2' + section  # Re-add the <h2 tag
-        main_html += f'    <section class="bg-white shadow-md rounded-lg p-6 mb-8">\n{section}\n    </section>\n'
+        section_id = ""
+        if "Concepts" in section: 
+            section_id = 'id="concepts"'
+        elif "Frequency" in section: 
+            section_id = 'id="frequency"'
+        main_html += f'    <section {section_id} class="bg-white shadow-md rounded-lg p-6 mb-8">\n{section}\n    </section>\n'
     
     main_html += '</main>'
     return main_html

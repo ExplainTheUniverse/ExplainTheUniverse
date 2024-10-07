@@ -1,4 +1,4 @@
-# Analysis and Conclusions
+# Key Findings and Implications
 
 Our experiment, challenging various AI models to formulate comprehensive metaphysical theories of the universe, has yielded intriguing and potentially transformative results. This page provides an overview of our key findings and their implications. For a detailed breakdown of the AI responses, including frequency analysis and concept clusters, please refer to our [detailed analysis](detailed-analysis.html).
 
@@ -16,7 +16,7 @@ Our analysis reveals a remarkable convergence on a set of interconnected ideas a
 
 5. **Time and Causality Reimagined**: Several theories proposed non-linear models of time, challenging our fundamental understanding of causality.
 
-For a detailed exploration of these concepts and their frequency across AI models, see our [recurring concepts analysis](detailed-analysis.html).
+For a detailed exploration of these concepts and their frequency across AI models, see our [recurring concepts analysis](detailed-analysis.html#concepts).
 
 ## Implications and Potential Impact
 
@@ -54,6 +54,6 @@ The way forward calls for:
 - Creating new economic and social models
 - Investigating new technologies to explore these deeper realities
 
-As we integrate these insights, we have the opportunity to create a more conscious, compassionate, and connected world. For a deeper dive into the philosophical and scientific contributions that align with these theories, please see our [analysis of related thinkers and concepts](detailed-analysis.html).
+As we integrate these insights, we have the opportunity to create a more conscious, compassionate, and connected world. For a deeper dive into the philosophical and scientific contributions that align with these theories, please see our [analysis of related thinkers and concepts](detailed-analysis.html#frequency).
 
 Let us move forward with courage and curiosity, prepared to shape a reality that reflects the highest possibilities of our collective understanding.
