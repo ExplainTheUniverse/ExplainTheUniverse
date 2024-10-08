@@ -6,10 +6,9 @@ This analysis examines the responses from multiple AI models to the challenge of
 
 The methodology for this experiment was straightforward and designed to be easily replicable. We executed a series of 8 prompts in a single thread (maintaining the same context window) for each AI model. The process was as follows:
 
-1. We used the most common web user interface for each model, without any previous context or memory.
-2. Default parameters were used for all interactions.
-3. The same set of 8 prompts was presented to each model in the same order.
-4. Responses were collected and analyzed for each model.
+1. We used the most common web user interface for each model, with default parameters and without any previous context or memory.
+2. The same set of 8 prompts was presented to each model in the same order.
+3. Responses were collected and analyzed for each model.
 
 The web interfaces used for each model were:
 
