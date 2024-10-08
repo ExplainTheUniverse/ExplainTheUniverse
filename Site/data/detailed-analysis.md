@@ -19,6 +19,19 @@ The web interfaces used for each model were:
 
 This approach ensures a level playing field for all models and allows for direct comparison of their outputs. It also makes the experiment easily reproducible by anyone with access to these AI interfaces.
 
+## Prompts
+
+The following prompts were used with all AI models in the order presented below. They were designed to minimize bias while encouraging deep exploration of how AIs explain the Universe. The prompts progress from theory development to comparisons with existing paradigms and potential implications. Each prompt asked the AI to be profound, extensive, and assertive in its response.
+
+1. Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.
+2. Analyze whether this theory offers potential explanations for phenomena addressed and not addressed by the scientific materialism. Be profound, extensive, and assertive.
+3. Elaborate an explanation of the proposed theory for a scientific audience. Include possible evidence, references to relevant publications, books, and researchers. Be profound, extensive, and assertive.
+4. Compare the proposed theory with scientific materialism from the perspective of the qualities of a metaphysical theory. Be profound, extensive, and assertive, without concerns about the status quo.
+5. Which personalities from philosophy and science have made contributions that could be relevant or aligned with the proposed theory? Be profound and extensive.
+6. Why has the materialist paradigm become dominant in the scientific community? Could it be limiting new advances and the search for truth? Be profound, extensive, and assertive.
+7. How does the proposed theory relate to different spiritual and philosophical traditions around the world? Be profound and extensive.
+8. What could be the practical and ethical implications of the proposed theory if it were widely accepted? Be profound, extensive, and assertive.
+
 ## Frequency Analysis
 
 We analyzed mentions of individuals, works, and papers across AI responses to identify key influences on the generated theories. Here are the most frequently cited:
