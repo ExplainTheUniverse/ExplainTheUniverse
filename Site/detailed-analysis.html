@@ -6,6 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="An experiment at the intersection of technology, science, and philosophy" name="description"/>
 <title>Detailed Analysis - How AIs Explain the Universe</title>
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://explaintheuniverse.org/analysis-conclusions.html" hreflang="en" rel="alternate"/>
 <link href="https://explaintheuniverse.org/pt/analise-conclusoes.html" hreflang="pt" rel="alternate"/>
@@ -86,21 +87,40 @@
 <div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
 <div class="content-wrapper">
 <aside class="sidebar mb-8 md:mb-0">
-<div class="bg-white shadow-md rounded-lg p-6">
-<h2 class="text-2xl font-semibold mb-4">Explore the Results</h2>
-<ul class="space-y-2">
-<li><a class="text-blue-600 hover:underline" href="results/o1-preview.html">o1-preview (OpenAI)</a></li>
-<li><a class="text-blue-600 hover:underline" href="results/claude-3-5-sonnet.html">Claude 3.5 Sonnet (Anthropic)</a></li>
-<li><a class="text-blue-600 hover:underline" href="results/gemini-1-5-pro-002.html">Gemini 1.5 Pro 002 (Google)</a></li>
-<li><a class="text-blue-600 hover:underline" href="results/gpt-4o.html">GPT-4o (OpenAI)</a></li>
-<li><a class="text-blue-600 hover:underline" href="results/gemini-1-5-pro.html">Gemini 1.5 Pro (Google)</a></li>
-<li><a class="text-blue-600 hover:underline" href="results/grok-2-beta.html">Grok-2 Beta (xAI)</a></li>
-</ul>
-<h2 class="text-2xl font-semibold mt-8 mb-4">Analysis and Conclusions</h2>
-<ul class="space-y-2">
-<li><a class="text-blue-600 hover:underline" href="analysis-conclusions.html">Key Findings and Implications</a></li>
-<li><a class="text-blue-600 hover:underline" href="detailed-analysis.html">In-Depth Analysis</a></li>
-</ul>
+<div x-data="{ exploreOpen: window.innerWidth &gt;= 768, analysisOpen: window.innerWidth &gt;= 768 }" x-init="window.addEventListener('resize', () =&gt; { 
+                    if (window.innerWidth &gt;= 768) {
+                        exploreOpen = true;
+                        analysisOpen = true;
+                    }
+                })">
+<!-- Explore the Results Section -->
+<div class="bg-white rounded-lg shadow-md mb-4">
+<button @click="exploreOpen = !exploreOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
+<span class="text-xl font-semibold">Explore the Results</span>
+<svg :class="{'rotate-180': exploreOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Explore the Results</h2>
+<div class="px-4 py-2 space-y-2" x-show="exploreOpen" x-transition="">
+<a class="block text-blue-600 hover:underline" href="results/o1-preview.html">o1-preview (OpenAI)</a>
+<a class="block text-blue-600 hover:underline" href="results/claude-3-5-sonnet.html">Claude 3.5 Sonnet (Anthropic)</a>
+<a class="block text-blue-600 hover:underline" href="results/gemini-1-5-pro-002.html">Gemini 1.5 Pro 002 (Google)</a>
+<a class="block text-blue-600 hover:underline" href="results/gpt-4o.html">GPT-4o (OpenAI)</a>
+<a class="block text-blue-600 hover:underline" href="results/gemini-1-5-pro.html">Gemini 1.5 Pro (Google)</a>
+<a class="block text-blue-600 hover:underline" href="results/grok-2-beta.html">Grok-2 Beta (xAI)</a>
+</div>
+</div>
+<!-- Analysis and Conclusions Section -->
+<div class="bg-white rounded-lg shadow-md">
+<button @click="analysisOpen = !analysisOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
+<span class="text-xl font-semibold">Analysis and Conclusions</span>
+<svg :class="{'rotate-180': analysisOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Analysis and Conclusions</h2>
+<div class="px-4 py-2 space-y-2" x-show="analysisOpen" x-transition="">
+<a class="block text-blue-600 hover:underline" href="analysis-conclusions.html">Key Findings and Implications</a>
+<a class="block text-blue-600 hover:underline" href="detailed-analysis.html">In-Depth Analysis</a>
+</div>
+</div>
 </div>
 </aside>
 <main class="w-full md:w-3/4 pr-0 md:pr-8" role="main">
