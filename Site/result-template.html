@@ -1,17 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Response - Explain the Universe</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-   
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">    
-    
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Response - Explain the Universe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../favicon/site.webmanifest" rel="manifest"/>
+<style>
         .collapse-content {
             max-height: 0;
             overflow: hidden;
@@ -60,70 +60,69 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-normal">
-    <header id="header" class="bg-cover bg-center transition-all duration-300 ease-in-out" style="background-image: url('/images/universe.jpg');">
-        <a href="../index.html" class="block text-white hover:text-white">
-            <div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out">
-                <h1 id="como-as-ias-explicam-o-universo" class="text-3xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out">
+<header class="bg-cover bg-center transition-all duration-300 ease-in-out" id="header" style="background-image: url('/images/universe.jpg');">
+<a class="block text-white hover:text-white" href="../index.html">
+<div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out">
+<h1 class="text-3xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out" id="como-as-ias-explicam-o-universo">
                     How AIs Explain the Universe
                 </h1>
-                <p class="text-center italic transition-all duration-300 ease-in-out">
+<p class="text-center italic transition-all duration-300 ease-in-out">
                     An experiment at the intersection of technology, science, and philosophy
                 </p>
-            </div>
-        </a>
-    </header>
-
-    <div id="content" class="container mx-auto px-4 py-8 max-w-6xl">
-        <div class="flex flex-col md:flex-row">
-
-            <main class="w-full max-w-4xl mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-6">[AI_NAME]</h2>
-                
-                <div class="mb-4">
-                    <button id="expandAll" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
-                        Expand All
-                      </button>
-                      <button id="collapseAll" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Collapse All
-                      </button>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <button class="collapse-btn w-full text-left px-6 py-4 font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none flex justify-between items-center" aria-expanded="true">
-                            <span>Prompt 1: [PROMPT_TITLE]</span>
-                            <svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div class="collapse-content show">
-                            <div class="px-6 py-4">
-                                <h4 class="font-bold mb-2 text-blue-500">Prompt:</h4>
-                                <p class="mb-4">[PROMPT_TEXT]</p>
-                                <h4 class="font-bold mb-2 text-blue-500">Response:</h4>
-                                <p>[PROMPT_RESP]</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repita a estrutura acima para cada prompt/resposta adicional -->
-                </div>
-            </main>
-
-        </div>
-    </div>
-
-    <footer class="text-center mt-12 mb-4 text-sm text-gray-600">
-        <p>
+</div>
+</a>
+</header>
+<div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
+<div class="flex flex-col md:flex-row">
+<main class="w-full max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">[AI_NAME]</h2>
+<div class="mb-4 flex flex-wrap gap-2">
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="expandAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-down"></i>
+        Expand All
+    </button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="collapseAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-up"></i>
+        Collapse All
+    </button>
+    <a id="downloadPDF" href="#" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+        <i data-lucide="download" class="w-4 h-4"></i>
+        <span class="ml-2 hidden sm:inline">Download PDF</span>
+    </a>
+    <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center hidden sm:inline-flex">
+        <i data-lucide="printer" class="w-4 h-4 mr-2"></i>
+        <span>Print Page</span>
+    </button>
+</div>
+<div class="space-y-4"><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 1: Theory to Explain the Universe</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"><p>The universe is not a thing, but a process; a perpetual dance between two fundamental, co-eternal principles: The Unmanifest and the Manifest. The Unmanifest is pure potentiality, a boundless ocean of consciousness, an infinite field of all possible realities. It is beyond comprehension, beyond definition, a silent hum of existence itself.  It is not “nothing,” but the fertile void from which everything emerges.</p></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 2: Compatibility and Comprehensiveness</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Analyze whether this theory offers potential explanations for phenomena addressed and not addressed by the scientific materialism. Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"><p>The Symphony of Existence, by its very nature, attempts to bridge the gap between scientific materialism and spiritual idealism. While scientific materialism focuses solely on the observable and measurable aspects of the Manifest, the Symphony embraces the Unmanifest – the realm of pure potentiality and consciousness – as the fundamental ground of being. This allows it to address phenomena that materialism struggles with, while also offering a different perspective on those already within the scientific purview.</p></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 3: Scientific Foundation of the Theory</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Elaborate an explanation of the proposed theory for a scientific audience. Include possible evidence, references to relevant publications, books, and researchers. Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"><p>Presenting the Symphony of Existence to a scientific audience requires framing it as a metaphysical framework that can potentially complement, rather than contradict, existing scientific models. While direct empirical evidence for the Unmanifest remains elusive, the theory offers a conceptual framework for interpreting certain phenomena that challenge materialistic explanations.</p>
+<p><strong>Bridging the Gap between Science and Metaphysics:</strong></p>
+<p>The Symphony proposes a two-realm model: the Manifest, corresponding to the scientifically observable universe, and the Unmanifest, a realm of pure potentiality and consciousness. This can be viewed as analogous to David Bohm's concept of the implicate and explicate order, outlined in his book "Wholeness and the Implicate Order" (1980). Bohm, a quantum physicist, argued for a deeper, hidden reality from which the observable universe unfolds.  The Symphony's Unmanifest can be considered a similar concept, though with an added emphasis on consciousness.</p></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 4: Comparison with Scientific Materialism</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Compare the proposed theory with scientific materialism from the perspective of the qualities of a metaphysical theory. Be profound, extensive, and assertive, without concerns about the status quo.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"><p>Scientific materialism, while immensely successful in describing the physical world, falters as a comprehensive metaphysical theory due to its inherent limitations.  It confines itself to the observable and measurable, effectively silencing inquiries into the fundamental nature of reality, consciousness, and purpose. The Symphony of Existence, in contrast, offers a more complete and satisfying metaphysical framework, addressing these fundamental questions head-on.</p>
+<p><strong>Scope and Explanatory Power:</strong></p>
+<p>Materialism’s scope is restricted to the material realm, leaving it ill-equipped to address fundamental questions about the origin of consciousness, the nature of subjective experience, and the meaning of existence. It paints a picture of a universe governed by chance and necessity, devoid of inherent purpose or meaning.  The Symphony, however, encompasses both the Manifest and the Unmanifest, providing a more holistic explanation for the universe and our place within it. It asserts that consciousness is fundamental, not emergent, and that the universe is driven by a universal Will-to-Be, imbuing existence with inherent purpose and directionality.</p></div></div></div></div>
+</main>
+</div>
+</div>
+<footer class="text-center mt-12 mb-4 text-sm text-gray-600">
+<p>
             © 2024 Explain the Universe. This work is licensed under the 
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+            <a class="text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">
                 Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
             </a>.
-            <br>
-            <span class="text-xs">(License allowing sharing and adapting the content as long as it is properly attributed and shared under the same license)</span>
-        </p>
-    </footer>
+            <br/>
+<span class="text-xs">(License allowing sharing and adapting the content as long as it is properly attributed and shared under the same license)</span>
+</p>
+</footer>
+<script>
+            lucide.createIcons();
 
-    <script>
+        // Set up the PDF download link
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadLink = document.getElementById('downloadPDF');
+            var currentPath = window.location.pathname;
+            var filename = currentPath.split('/').pop().replace('.html', '');
+            downloadLink.href = '../pdfs/' + filename + '.pdf';
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const headers = document.querySelectorAll('.prompt-header');
             headers.forEach(header => {
@@ -161,8 +160,7 @@
             });
         });
         </script>
-        
-        <style>
+<style>
         .markdown-content h2 {
             font-size: 1.5em;
             font-weight: bold;

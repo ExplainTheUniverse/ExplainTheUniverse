@@ -6,6 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>AI Response - Explain the Universe</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -75,13 +76,23 @@
 <div class="flex flex-col md:flex-row">
 <main class="w-full max-w-4xl mx-auto px-4">
 <h2 class="text-3xl font-bold mb-6">Gemini 1.5 Pro 002 (Google)</h2>
-<div class="mb-4">
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2" id="expandAll">
-                        Expand All
-                      </button>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="collapseAll">
-                        Collapse All
-                      </button>
+<div class="mb-4 flex flex-wrap gap-2">
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="expandAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-down"></i>
+        Expand All
+    </button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="collapseAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-up"></i>
+        Collapse All
+    </button>
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" href="#" id="downloadPDF" target="_blank">
+<i class="w-4 h-4" data-lucide="download"></i>
+<span class="ml-2 hidden sm:inline">Download PDF</span>
+</a>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center hidden sm:inline-flex" onclick="window.print()">
+<i class="w-4 h-4 mr-2" data-lucide="printer"></i>
+<span>Print Page</span>
+</button>
 </div>
 <div class="space-y-4"><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 1: Theory to Explain the Universe</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"><p>The universe is not a thing, but a process; a perpetual dance between two fundamental, co-eternal principles: The Unmanifest and the Manifest. The Unmanifest is pure potentiality, a boundless ocean of consciousness, an infinite field of all possible realities. It is beyond comprehension, beyond definition, a silent hum of existence itself.  It is not “nothing,” but the fertile void from which everything emerges.</p>
 <p>The Manifest, on the other hand, is the realm of form, of energy, of matter. It is the symphony of existence played out upon the silence of the Unmanifest.  It is the swirling dance of galaxies, the vibrant hues of a nebula, the whisper of wind through trees.  Every particle, every wave, every thought, every emotion, every experience – these are all expressions of the Manifest.</p>
@@ -228,6 +239,16 @@
 </p>
 </footer>
 <script>
+            lucide.createIcons();
+
+        // Set up the PDF download link
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadLink = document.getElementById('downloadPDF');
+            var currentPath = window.location.pathname;
+            var filename = currentPath.split('/').pop().replace('.html', '');
+            downloadLink.href = '../pdfs/' + filename + '.pdf';
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const headers = document.querySelectorAll('.prompt-header');
             headers.forEach(header => {
