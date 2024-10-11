@@ -20,7 +20,7 @@ This approach ensures a level playing field for all models and allows for direct
 
 ## Prompts
 
-The following prompts were used with all AI models in the order presented below. They were designed to minimize bias while encouraging deep exploration of how AIs explain the Universe. The prompts progress from theory development to comparisons with existing paradigms and potential implications. Each prompt asked the AI to be profound, extensive, and assertive in its response.
+The following prompts were used with all AI models in the order presented below. They were designed to minimize bias while encouraging deep exploration of how AIs explain the Universe. The prompts progress from theory development to comparisons with existing paradigms and potential implications.
 
 1. Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.
 2. Analyze whether this theory offers potential explanations for phenomena addressed and not addressed by the scientific materialism. Be profound, extensive, and assertive.
