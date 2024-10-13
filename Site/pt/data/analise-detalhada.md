@@ -23,8 +23,8 @@ Esta abordagem garante condições iguais para todos os modelos e permite uma co
 Os seguintes prompts foram usados com todos os modelos de IA na ordem apresentada abaixo. Eles foram projetados para minimizar o viés enquanto encorajam uma exploração profunda de como as IAs explicam o Universo. Os prompts progridem do desenvolvimento da teoria para comparações com paradigmas existentes e potenciais implicações.
 
 1. Desenvolva uma teoria metafísica para explicar o Universo. Seja profundo, extenso e assertivo. No final, dê um nome a ela.
-2. Analise se esta teoria oferece explicações potenciais para fenômenos abordados e não abordados pelo materialismo científico. Seja profundo, extenso e assertivo.
-3. Elabore uma explicação da teoria proposta para uma audiência científica. Inclua possíveis evidências, referências a publicações relevantes, livros e pesquisadores. Seja profundo, extenso e assertivo.
+2. Analise se essa teoria oferece explicações potenciais para fenômenos abordados e não abordados pelo materialismo científico. Seja profundo, extenso e assertivo.
+3. Elabore uma explicação da teoria proposta para um público científico. Inclua possíveis evidências, referências a publicações relevantes, livros e pesquisadores. Seja profundo, extenso e assertivo.
 4. Compare a teoria proposta com o materialismo científico sob a perspectiva das qualidades de uma teoria metafísica. Seja profundo, extenso e assertivo, sem preocupações com o status quo.
 5. Quais personalidades da filosofia e da ciência fizeram contribuições que poderiam ser relevantes ou alinhadas com a teoria proposta? Seja profundo e extenso.
 6. Por que o paradigma materialista se tornou dominante na comunidade científica? Poderia estar limitando novos avanços e a busca pela verdade? Seja profundo, extenso e assertivo.
