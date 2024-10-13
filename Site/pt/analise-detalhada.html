@@ -5,11 +5,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Um experimento na fronteira entre tecnologia, ciência e filosofia" name="description"/>
-<title>Como as IAs explicam o Universo</title>
+<title>Análise Aprofundada - Como as IAs explicam o Universo</title>
 <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://explaintheuniverse.org/" hreflang="en" rel="alternate"/>
-<link href="https://explaintheuniverse.org/pt/" hreflang="pt" rel="alternate"/>
+<link href="https://explaintheuniverse.org/detailed-analysis.html" hreflang="en" rel="alternate"/>
+<link href="https://explaintheuniverse.org/pt/analise-detalhada.html" hreflang="pt" rel="alternate"/>
 <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -86,42 +86,45 @@
     </script>
 <div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
 <div class="content-wrapper">
-<aside class="sidebar mb-8 md:mb-0">
-<div x-data="{ exploreOpen: window.innerWidth &gt;= 768, analysisOpen: window.innerWidth &gt;= 768 }" x-init="window.addEventListener('resize', () =&gt; { 
+
+    <aside class="sidebar mb-8 md:mb-0">
+        <div x-data="{ exploreOpen: window.innerWidth &gt;= 768, analysisOpen: window.innerWidth &gt;= 768 }" x-init="window.addEventListener('resize', () =&gt; { 
                             if (window.innerWidth &gt;= 768) {
                                 exploreOpen = true;
                                 analysisOpen = true;
                             }
                         })">
-<!-- Explore the Results Section -->
-<div class="bg-white rounded-lg shadow-md mb-4">
-<button @click="exploreOpen = !exploreOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
-<span class="text-xl font-semibold">Explore os Resultados</span>
-<svg :class="{'rotate-180': exploreOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Explore os Resultados</h2>
-<div class="px-4 py-2 space-y-2" x-show="exploreOpen" x-transition="">
-<a class="block text-blue-600 hover:underline" href="resultados/o1-preview.html" title="The most powerful AI model to date">o1-preview (OpenAI)<span>🥇</span></a>
-<a class="block text-blue-600 hover:underline" href="resultados/claude-3-5-sonnet.html" title="The 2nd most powerful AI model to date">Claude 3.5 Sonnet (Anthropic)<span>🥈</span></a>
-<a class="block text-blue-600 hover:underline" href="resultados/gpt-4o.html" title="The 3rd most powerful AI model to date">GPT-4o (OpenAI)<span>🥉</span></a>
-<a class="block text-blue-600 hover:underline" href="resultados/gemini-1-5-pro-002.html">Gemini 1.5 Pro 002 (Google)</a>
-<a class="block text-blue-600 hover:underline" href="resultados/gemini-1-5-pro.html">Gemini 1.5 Pro (Google)</a>
-</div>
-</div>
-<!-- Analysis and Conclusions Section -->
-<div class="bg-white rounded-lg shadow-md">
-<button @click="analysisOpen = !analysisOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
-<span class="text-xl font-semibold">Análise e Conclusões</span>
-<svg :class="{'rotate-180': analysisOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Análise e Conclusões</h2>
-<div class="px-4 py-2 space-y-2" x-show="analysisOpen" x-transition="">
-<a class="block text-blue-600 hover:underline" href="analise-conclusoes.html">Descobertas e Implicações</a>
-<!-- <a class="block text-blue-600 hover:underline" href="analise.html">In-Depth Analysis</a> -->
-</div>
-</div>
-</div>
-</aside>
+        <!-- Explore the Results Section -->
+        <div class="bg-white rounded-lg shadow-md mb-4">
+        <button @click="exploreOpen = !exploreOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
+        <span class="text-xl font-semibold">Explore os Resultados</span>
+        <svg :class="{'rotate-180': exploreOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        </button>
+        <h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Explore os Resultados</h2>
+        <div class="px-4 py-2 space-y-2" x-show="exploreOpen" x-transition="">
+        <a class="block text-blue-600 hover:underline" href="resultados/o1-preview.html" title="The most powerful AI model to date">o1-preview (OpenAI)<span>🥇</span></a>
+        <a class="block text-blue-600 hover:underline" href="resultados/claude-3-5-sonnet.html" title="The 2nd most powerful AI model to date">Claude 3.5 Sonnet (Anthropic)<span>🥈</span></a>
+        <a class="block text-blue-600 hover:underline" href="resultados/gpt-4o.html" title="The 3rd most powerful AI model to date">GPT-4o (OpenAI)<span>🥉</span></a>
+        <a class="block text-blue-600 hover:underline" href="resultados/gemini-1-5-pro-002.html">Gemini 1.5 Pro 002 (Google)</a>
+        <a class="block text-blue-600 hover:underline" href="resultados/gemini-1-5-pro.html">Gemini 1.5 Pro (Google)</a>
+        </div>
+        </div>
+        <!-- Analysis and Conclusions Section -->
+        <div class="bg-white rounded-lg shadow-md">
+        <button @click="analysisOpen = !analysisOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
+        <span class="text-xl font-semibold">Análise e Conclusões</span>
+        <svg :class="{'rotate-180': analysisOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        </button>
+        <h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Análise e Conclusões</h2>
+        <div class="px-4 py-2 space-y-2" x-show="analysisOpen" x-transition="">
+        <a class="block text-blue-600 hover:underline" href="analise-conclusoes.html">Descobertas e Implicações</a>
+        <!-- <a class="block text-blue-600 hover:underline" href="analise.html">In-Depth Analysis</a> -->
+        </div>
+        </div>
+        </div>
+        </aside>
+        
+
 <main class="w-full md:w-3/4 pr-0 md:pr-8" role="main">
 <section class="bg-white shadow-md rounded-lg p-6 mb-8">
 <h1 class="text-3xl font-bold mb-6">Sobre o Experimento</h1>
