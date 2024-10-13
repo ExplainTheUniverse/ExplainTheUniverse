@@ -6,6 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Resultado da IA - Unidade Cósmica</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <link href="../../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="../../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="../../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -74,15 +75,25 @@
 <div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
 <div class="flex flex-col md:flex-row">
 <main class="w-full max-w-4xl mx-auto px-4">
-<h2 class="text-3xl mb-2"><span class="font-bold">Modelo de IA: </span>Claude 3.5 Sonnet (Anthropic)</h2>
+<h1 class="text-3xl mb-2"><span class="font-bold">Modelo de IA: </span>Claude 3.5 Sonnet (Anthropic)</h1>
 <p class="text-sm text-gray-600 mb-4"><span class="font-bold">Prompts executados em: </span>07-Set-2024</p>
-<div class="mb-4 print:hidden">
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2" id="expandAll">
-                        Expandir Tudo
-                      </button>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="collapseAll">
-                        Colapsar Tudo
-                      </button>
+<div class="mb-4 flex flex-wrap gap-2 print:hidden">
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="expandAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-down"></i>
+                            Expandir Tudo
+                        </button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="collapseAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-up"></i>
+                            Colapsar Tudo
+                        </button>
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" href="#" id="downloadPDF" target="_blank">
+<i class="w-4 h-4" data-lucide="download"></i>
+<span class="ml-2 hidden sm:inline">Download PDF</span>
+</a>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center hidden sm:inline-flex" onclick="window.print()">
+<i class="w-4 h-4 mr-2" data-lucide="printer"></i>
+<span>Imprimir</span>
+</button>
 </div>
 <div class="space-y-4"><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 1: Teoria para Explicar o Universo</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Desenvolva uma teoria metafísica para explicar o Universo. Seja profundo, extenso e assertivo. No final, dê um nome a ela.</p><h4 class="font-bold mb-2 text-blue-500">Resposta:</h4><div class="markdown-content"><h1>O Entrelaçamento Cósmico: Uma Teoria Metafísica do Universo</h1>
 <h2>1. Fundamentos</h2>
@@ -710,7 +721,7 @@
 </div>
 <footer class="text-center mt-12 mb-4 text-sm text-gray-600">
 <p>
-            © 2024 Unidade Cósmica. Este trabalho está licenciado sob a 
+            © 2024 ExplainTheUniverse.org Este trabalho está licenciado sob a 
             <a class="text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">
                 Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
             </a>.
@@ -719,6 +730,16 @@
 </p>
 </footer>
 <script>
+        lucide.createIcons();
+
+        // Set up the PDF download link
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadLink = document.getElementById('downloadPDF');
+            var currentPath = window.location.pathname;
+            var filename = currentPath.split('/').pop().replace('.html', '');
+            downloadLink.href = '../pdfs/' + filename + '.pdf';
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const headers = document.querySelectorAll('.prompt-header');
             headers.forEach(header => {
