@@ -47,7 +47,7 @@ def create_main_html(html_content):
     main_html += '</main>'
     return main_html
 
-fnames = ["Site/pt/data/analise-conclusoes", "Site/data/analysis-conclusions", "Site/data/detailed-analysis"]
+fnames = ["Site/pt/data/analise-conclusoes", "Site/pt/data/index", "Site/data/analysis-conclusions", "Site/data/detailed-analysis", "Site/data/index"]
 
 for fname in fnames:
 

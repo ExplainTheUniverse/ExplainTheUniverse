@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Running ConclusionsBuilder.py..."
-python3 ConclusionsBuilder.py
+echo "Running PagesBuilder.py..."
+python3 PagesBuilder.py
 
 echo "Running ResultBuilder.py..."
 python3 ResultBuilder.py
