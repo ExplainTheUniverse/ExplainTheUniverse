@@ -1,4 +1,5 @@
 AI_NAME: xxxxxxxx
+EXEC_DATE: dd-mmm-yy
 
 PROMPT_TITLE: Teoria para Explicar o Universo
 

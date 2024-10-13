@@ -14,6 +14,7 @@ def write_file(filename, content):
 
 def extract_content(markdown_content):
     ai_name = re.search(r'AI_NAME: (.+)', markdown_content).group(1)
+    exec_date = re.search(r'EXEC_DATE: (.+)', markdown_content).group(1)
     
     prompts = []
     current_prompt = {}
@@ -56,15 +57,20 @@ def extract_content(markdown_content):
         if 'response' in prompt:
             prompt['response'] = prompt['response'].strip()
     
-    return ai_name, prompts
+    return ai_name, exec_date, prompts
 
-def apply_template(template, ai_name, prompts, en=False):
+def apply_template(template, ai_name, exec_date, prompts, en=False):
     soup = BeautifulSoup(template, 'html.parser')
     
     # Update AI name
-    ai_name_placeholder = soup.find(string=re.compile(r'\[AI_NAME\]'))
-    if ai_name_placeholder:
-        ai_name_placeholder.replace_with(ai_name)
+    str_placeholder = soup.find(string=re.compile(r'\[AI_NAME\]'))
+    if str_placeholder:
+        str_placeholder.replace_with(ai_name)
+    
+    # Update exec date
+    str_placeholder = soup.find(string=re.compile(r'\[EXEC_DATE\]'))
+    if str_placeholder:
+        str_placeholder.replace_with(exec_date)
     
     # Find the container for prompts
     prompt_container = soup.find('div', class_='space-y-4')
@@ -122,8 +128,8 @@ markdown_files = [f for f in markdown_files if not f.endswith('resultado-templat
 for markdown_file in markdown_files:
     print(f"Processing {markdown_file}...")
     markdown_content = read_file(markdown_file)
-    ai_name, prompts = extract_content(markdown_content)
-    result = apply_template(template_content, ai_name, prompts)
+    ai_name, exec_date, prompts = extract_content(markdown_content)
+    result = apply_template(template_content, ai_name, exec_date, prompts)
     
     # Generate output HTML filename
     output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('resultado-', '')
@@ -146,8 +152,8 @@ markdown_files = [f for f in markdown_files if not f.endswith('result-template.m
 for markdown_file in markdown_files:
     print(f"Processing EN {markdown_file}...")
     markdown_content = read_file(markdown_file)
-    ai_name, prompts = extract_content(markdown_content)
-    result = apply_template(template_content, ai_name, prompts, True)
+    ai_name, exec_date, prompts = extract_content(markdown_content)
+    result = apply_template(template_content, ai_name, exec_date, prompts, True)
     
     # Generate output HTML filename
     output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('result-', '')
