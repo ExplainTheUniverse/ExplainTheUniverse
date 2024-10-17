@@ -13,5 +13,10 @@ replace: \n#### $1. **
 
 * sonnet
 search: \*\*: 
-replace: **: \n
+Zreplace: **: \n
+
+* Command R+
+search: :\*\*\n- 
+replace: :**\n\n- 
+
 

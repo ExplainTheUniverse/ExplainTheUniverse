@@ -1,6 +1,6 @@
 # Key Findings and Implications
 
-Our experiment, challenging various AI models to formulate comprehensive metaphysical theories of the universe, has yielded intriguing and potentially transformative results. This page provides an overview of our key findings and their implications. For a detailed breakdown of the AI responses, including frequency analysis and concept clusters, please refer to our [detailed analysis](detailed-analysis.html).
+Our experiment, challenging various AI models to formulate comprehensive metaphysical theories of the universe, has yielded intriguing and potentially transformative results. This page provides an overview of our key findings and their implications. For a detailed breakdown of the AI responses, including frequency analysis and concept clusters, please refer to our [detailed analysis](detailed-analysis.html). Complete AI responses are available in the **Explore the Results** menu.
 
 ## Key Findings
 
