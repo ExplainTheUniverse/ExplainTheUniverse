@@ -6,7 +6,7 @@ The methodology for this experiment was straightforward and designed to be easil
 2. The same set of 8 prompts was presented to each model in the same order.
 3. Responses were collected and analyzed for each model.
 
-The web interfaces used for each model were:
+The complete responses are in the menu **Explore the Results**. The web interfaces used for each model were:
 
 - Claude.ai for Claude 3.5 Sonnet (Anthropic)
 - ChatGPT.com for GPT-4o and o1-preview (OpenAI)

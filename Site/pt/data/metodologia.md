@@ -4,9 +4,9 @@ A metodologia para este experimento foi simples e projetada para ser facilmente 
 
 1. Usamos a interface de usuário web mais comum para cada modelo, com parâmetros padrão e sem qualquer contexto ou memória prévia.
 2. O mesmo conjunto de 8 prompts foi apresentado a cada modelo na mesma ordem.
-3. As respostas foram coletadas e analisadas para cada modelo.
+3. As respostas foram coletadas e analisadas para cada modelo. 
 
-As interfaces web utilizadas para cada modelo foram:
+As respostas completas estão no menu **Explore os Resultados**. As interfaces web utilizadas para cada modelo foram:
 
 - Claude.ai para Claude 3.5 Sonnet (Anthropic)
 - ChatGPT.com para GPT-4o e o1-preview (OpenAI)
