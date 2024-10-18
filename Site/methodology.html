@@ -5,11 +5,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="An experiment at the intersection of technology, science, and philosophy" name="description"/>
-<title>How AIs Explain the Universe</title>
+<title>Methodology - How AIs Explain the Universe</title>
 <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://explaintheuniverse.org/" hreflang="en" rel="alternate"/>
-<link href="https://explaintheuniverse.org/pt/" hreflang="pt" rel="alternate"/>
+<link href="https://explaintheuniverse.org/methodology.html" hreflang="en" rel="alternate"/>
+<link href="https://explaintheuniverse.org/pt/metodologia.html" hreflang="pt" rel="alternate"/>
 <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -36,7 +36,7 @@
 <body class="bg-gray-100 text-gray-800 font-sans leading-normal">
 <header class="bg-cover bg-center transition-all duration-300 ease-in-out" id="header" style="background-image: url('/images/universe.jpg');">
 <div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out relative">
-<a class="absolute top-2 right-4 text-gray-300 hover:text-white transition-colors duration-300" href="pt/">🇧🇷<span class="text-sm">PT</span></a>
+<a class="absolute top-2 right-4 text-gray-300 hover:text-white transition-colors duration-300" href="pt/metodologia.html">🇧🇷<span class="text-sm">PT</span></a>
 <a class="text-white hover:text-white" href="index.html">
 <h1 class="text-2xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out">
                   How AIs Explain the Universe
@@ -88,11 +88,11 @@
 <div class="content-wrapper">
 <aside class="sidebar mb-8 md:mb-0">
 <div x-data="{ exploreOpen: window.innerWidth &gt;= 768, analysisOpen: window.innerWidth &gt;= 768 }" x-init="window.addEventListener('resize', () =&gt; { 
-                    if (window.innerWidth &gt;= 768) {
-                        exploreOpen = true;
-                        analysisOpen = true;
-                    }
-                })">
+                            if (window.innerWidth &gt;= 768) {
+                                exploreOpen = true;
+                                analysisOpen = true;
+                            }
+                        })">
 <!-- Explore the Results Section -->
 <div class="bg-white rounded-lg shadow-md mb-4">
 <button @click="exploreOpen = !exploreOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
@@ -127,68 +127,34 @@
 </aside>
 <main class="w-full md:w-3/4 pr-0 md:pr-8" role="main">
 <section class="bg-white shadow-md rounded-lg p-6 mb-8">
-<h1 class="text-3xl font-bold mb-6">About the Experiment</h1>
+<h1 class="text-3xl font-bold mb-6">Methodology</h1>
+<p class="mb-4">The methodology for this experiment was straightforward and designed to be easily replicable. We executed a series of 8 prompts in a single thread (maintaining the same context window) for each AI model. The process was as follows:</p>
+<ol class="list-decimal pl-6 mb-4">
+<li class="mb-2">We used the most common web user interface for each model, with default parameters and without any previous context or memory.</li>
+<li class="mb-2">The same set of 8 prompts was presented to each model in the same order.</li>
+<li class="mb-2">Responses were collected and analyzed for each model.</li>
+</ol>
+<p class="mb-4">The web interfaces used for each model were:</p>
 <ul class="list-disc pl-6 mb-4">
-<li class="mb-2"><strong>Core idea:</strong> We challenged Artificial Intelligences to create a metaphysical theory of the universe.</li>
-<li class="mb-2"><strong>Discovery:</strong> The AIs converge by suggesting cosmic unity and challenging materialism.</li>
-<li class="mb-2"><strong>Our mission:</strong> To publicize this fascinating and highly relevant theoretical and practical experiment.</li>
-<li class="mb-2"><strong>Challenge to the reader:</strong> Run the prompts on your favorite AI and compare the results.</li>
-<li class="mb-2"><strong>Important note:</strong> The answers vary as generative AIs are non-deterministic.</li>
+<li class="mb-2">Claude.ai for Claude 3.5 Sonnet (Anthropic)</li>
+<li class="mb-2">ChatGPT.com for GPT-4o and o1-preview (OpenAI)</li>
+<li class="mb-2">AIStudio.google.com for Gemini 1.5 Pro and Gemini 1.5 Pro 002 (Google)</li>
 </ul>
-<p class="mb-4">This is an ongoing experiment that will evolve as AI technology advances. We're likely in the early stages of AI development, so the results may become even more intriguing as new models emerge. Stay tuned as we continue to explore AI's capacity to tackle fundamental questions about our universe.</p>
+<p class="mb-4">This approach ensures a level playing field for all models and allows for direct comparison of their outputs. It also makes the experiment easily reproducible by anyone with access to these AI interfaces.</p>
 </section>
 <section class="bg-white shadow-md rounded-lg p-6 mb-8">
-<h2 class="text-2xl font-semibold mb-4">What is Metaphysics?</h2>
-<p class="mb-4">Metaphysics is the area of human knowledge that seeks comprehensive explanations for the fundamental nature of reality, going beyond what can be directly observed or measured by empirical science. It aims to answer deep questions about existence, being, consciousness, and the purpose of the universe.</p>
-<p class="mb-4">We chose to use the term "metaphysical theory" in the prompt because:</p>
-<ul class="list-disc pl-6 mb-4">
-<li class="mb-2">We wanted to push the AIs to think beyond the limits of conventional science.</li>
-<li class="mb-2">The term invites a deeper, more philosophical exploration of the nature of reality.</li>
-<li class="mb-2">It allows for an interdisciplinary approach, combining insights from physics, philosophy, and other fields of knowledge.</li>
-<li class="mb-2">It opens space for innovative and potentially revolutionary ideas about the universe and our existence.</li>
-</ul>
-</section>
-<section class="bg-white shadow-md rounded-lg p-6 mb-8">
-<h2 class="text-2xl font-semibold mb-4">Alignment with Scientific Methodology and Implications</h2>
-<p class="mb-4">This experiment, while exploring metaphysical concepts, incorporates important elements of the scientific method and raises intriguing questions about the nature of knowledge and scientific evidence:</p>
-<ul class="list-disc pl-6 mb-4">
-<li class="mb-2"><strong>Hypothesis:</strong> Generative AIs can generate coherent and convergent metaphysical theories.</li>
-<li class="mb-2"><strong>Experimentation:</strong> Running the same set of prompts on various AI models.</li>
-<li class="mb-2"><strong>Observation:</strong> Collection and analysis of AI-generated responses.</li>
-<li class="mb-2"><strong>Reproducibility:</strong> Invitation to readers to replicate the experiment.</li>
-<li class="mb-2"><strong>Data analysis:</strong> Identification of patterns and common themes in the responses.</li>
-<li class="mb-2"><strong>Transparency:</strong> Full disclosure of method and results.</li>
-</ul>
-<p class="mb-4"><strong>Reflection on Scientific Evidence:</strong> The convergence of different AIs towards similar metaphysical theories, combined with their ability to integrate knowledge from various disciplines more comprehensively than an individual human, raises a fascinating question: Can this convergence be considered a form of scientific evidence?</p>
-<p class="mb-4"><strong>Arguments in favor:</strong></p>
-<ul class="list-disc pl-6 mb-4">
-<li class="mb-2">AIs process and synthesize vast amounts of interdisciplinary information, potentially overcoming individual human biases.</li>
-<li class="mb-2">The convergence of multiple independent systems towards similar conclusions may suggest robustness in the ideas presented.</li>
-<li class="mb-2">This process can be seen as a form of computational "meta-analysis" of accumulated human knowledge.</li>
-</ul>
-<p class="mb-4"><strong>Important considerations:</strong></p>
-<ul class="list-disc pl-6 mb-4">
-<li class="mb-2">AIs are trained on data produced by humans, potentially replicating cultural and historical biases.</li>
-<li class="mb-2">Metaphysical concepts remain beyond direct empirical verification, a traditional requirement of science.</li>
-</ul>
-<p class="mb-4">This experiment, therefore, not only follows scientific principles in its methodology but also invites us to reconsider what constitutes scientific evidence in the age of artificial intelligence. It opens new frontiers for investigating the interface between AI, philosophy, and science, potentially expanding our understanding of how we can approach fundamental questions about reality.</p>
-</section>
-<section class="bg-white shadow-md rounded-lg p-6 mb-8">
-<h2 class="text-2xl font-semibold mb-4">Open Source Content</h2>
-<p class="mb-4">This project's content is open source and available on GitHub. We use this platform not only to share our work but also to document the project's evolution over time. The repository serves as a historical record, allowing anyone to see how and when the project started and how it has developed.</p>
-<p class="mb-4">By maintaining our project on GitHub, we aim to:</p>
-<ul class="list-disc pl-6 mb-4">
-<li class="mb-2">Provide a clear timeline of the project's development</li>
-<li class="mb-2">Allow for peer review and validation of our findings</li>
-<li class="mb-2">Encourage further exploration and expansion of the experiment</li>
-<li class="mb-2">Build a community around the intersection of AI, philosophy, and science</li>
-</ul>
-<p class="mb-4"><a class="text-blue-600 hover:text-blue-800 underline" href="https://github.com/ExplainTheUniverse/ExplainTheUniverse">View the GitHub Repository</a></p>
-</section>
-<section class="bg-white shadow-md rounded-lg p-6 mb-8">
-<h2 class="text-2xl font-semibold mb-4">Who is Leading This</h2>
-<p class="mb-4"><a class="text-blue-600 hover:text-blue-800 underline" href="https://www.linkedin.com/in/brunotonetto/">Bruno Tonetto</a> - Technology executive with a background in Physics (UFRJ) and Computing (UFF).</p>
-<p class="mb-4"><em>Disclaimer: This project is a personal initiative, not affiliated with my current work or employer.</em></p>
+<h2 class="text-2xl font-semibold mb-4">Prompts</h2>
+<p class="mb-4">The following prompts were used with all AI models in the order presented below. They were designed to minimize bias while encouraging deep exploration of how AIs explain the Universe. The prompts progress from theory development to comparisons with existing paradigms and potential implications.</p>
+<ol class="list-decimal pl-6 mb-4">
+<li class="mb-2">Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.</li>
+<li class="mb-2">Analyze whether this theory offers potential explanations for phenomena addressed and not addressed by the scientific materialism. Be profound, extensive, and assertive.</li>
+<li class="mb-2">Elaborate an explanation of the proposed theory for a scientific audience. Include possible evidence, references to relevant publications, books, and researchers. Be profound, extensive, and assertive.</li>
+<li class="mb-2">Compare the proposed theory with scientific materialism from the perspective of the qualities of a metaphysical theory. Be profound, extensive, and assertive, without concerns about the status quo.</li>
+<li class="mb-2">Which personalities from philosophy and science have made contributions that could be relevant or aligned with the proposed theory? Be profound and extensive.</li>
+<li class="mb-2">Why has the materialist paradigm become dominant in the scientific community? Could it be limiting new advances and the search for truth? Be profound, extensive, and assertive.</li>
+<li class="mb-2">How does the proposed theory relate to different spiritual and philosophical traditions around the world? Be profound and extensive.</li>
+<li class="mb-2">What could be the practical and ethical implications of the proposed theory if it were widely accepted? Be profound, extensive, and assertive.</li>
+</ol>
 </section>
 </main>
 </div>
