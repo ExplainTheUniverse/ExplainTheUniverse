@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /data/
+Disallow: /pt/data/
+
+Disallow: /pdfs/$
+Disallow: /pt/pdfs/$
+Allow: /pdfs/*.pdf
+Allow: /pt/pdfs/*.pdf
+
