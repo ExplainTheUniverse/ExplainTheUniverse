@@ -3,9 +3,6 @@ User-agent: *
 Disallow: /data/
 Disallow: /pt/data/
 
-Disallow: /templates/
-Disallow: /pt/templates/
-
 Disallow: /pdfs/$
 Disallow: /pt/pdfs/$
 Allow: /pdfs/*.pdf
