@@ -119,11 +119,11 @@ def apply_template(template, ai_name, exec_date, prompts, en=False):
     return str(soup)
 
 # Main execution
-template_content = read_file('Site/pt/resultado-template.html')
+template_content = read_file('Site/pt/resultados/_template.html')
 
-# Process all markdown files in the Site/data/ directory, excluding the template
-markdown_files = glob.glob('Site/pt/data/resultado-*.md')
-markdown_files = [f for f in markdown_files if not f.endswith('resultado-template.md')]
+# Process all markdown files in the Site/pt/data/resultados directory, excluding the template
+markdown_files = glob.glob('Site/pt/data/resultados/*.md')
+markdown_files = [f for f in markdown_files if not f.endswith('_template.md')]
 
 for markdown_file in markdown_files:
     print(f"Processing {markdown_file}...")
@@ -132,22 +132,19 @@ for markdown_file in markdown_files:
     result = apply_template(template_content, ai_name, exec_date, prompts)
     
     # Generate output HTML filename
-    output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('resultado-', '')
+    output_filename = os.path.basename(markdown_file).replace('.md', '.html')
     output_path = os.path.join('Site/pt/resultados', output_filename)
     
-    # Skip writing if the output file is resultado-template.html
-    if output_filename != 'resultado-template.html':
-        write_file(output_path, result)
-        print(f"Generated {output_path}")
-    else:
-        print(f"Skipped generating {output_filename}")
+    write_file(output_path, result)
+    print(f"Generated {output_path}")
+    
 
 # Main execution Site
-template_content = read_file('Site/result-template.html')
+template_content = read_file('Site/results/_template.html')
 
-# Process all markdown files in the Site/data/ directory, excluding the template
-markdown_files = glob.glob('Site/data/result-*.md')
-markdown_files = [f for f in markdown_files if not f.endswith('result-template.md')]
+# Process all markdown files in the Site/data/results directory, excluding the template
+markdown_files = glob.glob('Site/data/results/*.md')
+markdown_files = [f for f in markdown_files if not f.endswith('_template.md')]
 
 for markdown_file in markdown_files:
     print(f"Processing EN {markdown_file}...")
@@ -156,13 +153,9 @@ for markdown_file in markdown_files:
     result = apply_template(template_content, ai_name, exec_date, prompts, True)
     
     # Generate output HTML filename
-    output_filename = os.path.basename(markdown_file).replace('.md', '.html').replace('result-', '')
+    output_filename = os.path.basename(markdown_file).replace('.md', '.html')
     output_path = os.path.join('Site/results', output_filename)
     
-    # Skip writing if the output file is result-template.html
-    if output_filename != 'result-template.html':
-        write_file(output_path, result)
-        print(f"Generated EN {output_path}")
-    else:
-        print(f"Skipped generating EN {output_filename}")
+    write_file(output_path, result)
+    print(f"Generated EN {output_path}")
 
