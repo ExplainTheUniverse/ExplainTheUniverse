@@ -70,8 +70,12 @@ for fname in fnames:
 
     # Find and replace the main tag
     main_tag = soup.find('main')
+    listen_tag = soup.find('section', {"id":"listen"})
     if main_tag:
         new_main_tag = BeautifulSoup(new_main_html, 'html.parser').main
+        if (listen_tag):
+            new_main_tag.insert(0,listen_tag)
+        
         main_tag.replace_with(new_main_tag)
     else:
         print("No <main> tag found in the HTML file.")
