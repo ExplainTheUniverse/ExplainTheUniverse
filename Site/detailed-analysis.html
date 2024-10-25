@@ -6,10 +6,11 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="An experiment at the intersection of technology, science, and philosophy" name="description"/>
 <title>Detailed Analysis - How AIs Explain the Universe</title>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
 <!-- <link href="https://explaintheuniverse.org/analysis-conclusions.html" hreflang="en" rel="alternate"/>
 <link href="https://explaintheuniverse.org/pt/analise-conclusoes.html" hreflang="pt" rel="alternate"/> -->
+<!--FINCLUDE:header-->
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -20,12 +21,14 @@
                 display: flex;
                 flex-direction: row-reverse;
             }
+
             .sidebar {
                 width: 25%;
                 position: sticky;
                 top: 5rem;
                 height: calc(100vh - 5rem);
             }
+
             .main-content {
                 width: 75%;
                 padding-right: 2rem;
@@ -34,45 +37,56 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-normal">
-<header class="bg-cover bg-center transition-all duration-300 ease-in-out" id="header" style="background-image: url('/images/universe.jpg');">
+<header class="bg-cover bg-center transition-all duration-300 ease-in-out" style="background-image: url('/images/universe.jpg');">
 <div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out relative">
+<!--FINCLUDE-->
 <!-- <a class="absolute top-2 right-4 text-gray-300 hover:text-white transition-colors duration-300" href="pt/analise-conclusoes.html">🇧🇷<span class="text-sm">PT</span></a> -->
+<!--FINCLUDE:header2-->
 <a class="text-white hover:text-white" href="index.html">
 <h1 class="text-2xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out">
-                  How AIs Explain the Universe
-                </h1>
-</a>
-<p class="text-center text-white italic">An experiment at the intersection of technology, science, and philosophy</p>
+            How AIs Explain the Universe
+        </h1>
+        </a>
+<p class="text-center text-white">
+            An experiment at the intersection of technology, science, and philosophy
+        </p>
 </div>
 </header>
 <style>
         #header .container {
             transition: padding 0.3s ease-in-out;
         }
-        #header h1, #header p {
+
+        #header h1,
+        #header p {
             transition: font-size 0.3s ease-in-out;
         }
+
         #header.scrolled .container {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
         }
+
         #header.scrolled h1 {
             font-size: 1.3rem;
         }
+
         #header.scrolled p {
             font-size: 0.875rem;
         }
+
         @media (min-width: 768px) {
             #header.scrolled h1 {
                 font-size: 2rem;
             }
+
             #header.scrolled p {
                 font-size: 1rem;
             }
         }
     </style>
 <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
             var content = document.getElementById('content');
             if (window.scrollY > 10) {
@@ -88,22 +102,22 @@
 <div class="content-wrapper">
 <aside class="sidebar mb-8 md:mb-0">
 <div x-data="{ exploreOpen: window.innerWidth &gt;= 768, analysisOpen: window.innerWidth &gt;= 768 }" x-init="window.addEventListener('resize', () =&gt; { 
-                    if (window.innerWidth &gt;= 768) {
-                        exploreOpen = true;
-                        analysisOpen = true;
-                    }
-                })">
-<!-- Explore the Results Section -->
+       if (window.innerWidth &gt;= 768) {
+           exploreOpen = true;
+           analysisOpen = true;
+       }
+    })">
 <div class="bg-white rounded-lg shadow-md mb-4">
-<button @click="exploreOpen = !exploreOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
-<span class="text-xl font-semibold">Explore the Results</span>
-<svg :class="{'rotate-180': exploreOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Explore the Results</h2>
+<div @click="exploreOpen = !exploreOpen" class="px-4 py-3 flex justify-between items-center cursor-pointer">
+<h2 class="text-xl font-semibold">Explore the Results</h2>
+<svg :class="{'rotate-180': exploreOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
 <div class="px-4 py-2 space-y-2" x-show="exploreOpen" x-transition="">
-<a class="block text-blue-600 hover:underline" href="results/o1-preview.html" title="The most powerful AI model to date">o1-preview (OpenAI)<span>🥇</span></a>
-<a class="block text-blue-600 hover:underline" href="results/claude-3-5-sonnet.html" title="The 2nd most powerful AI model to date">Claude 3.5 Sonnet (Anthropic)<span>🥈</span></a>
-<a class="block text-blue-600 hover:underline" href="results/gpt-4o.html" title="The 3rd most powerful AI model to date">GPT-4o (OpenAI)<span>🥉</span></a>
+<a class="block text-blue-600 hover:underline" href="results/o1-preview.html" title="The most powerful AI model to date">o1-preview (OpenAI)🥇</a>
+<a class="block text-blue-600 hover:underline" href="results/claude-3-5-sonnet.html" title="The 2nd most powerful AI model to date">Claude 3.5 Sonnet (Anthropic)🥈</a>
+<a class="block text-blue-600 hover:underline" href="results/gpt-4o.html" title="The 3rd most powerful AI model to date">GPT-4o (OpenAI)🥉</a>
 <a class="block text-blue-600 hover:underline" href="results/command-r-plus.html">Command R+ (Cohere)</a>
 <a class="block text-blue-600 hover:underline" href="results/gemini-1-5-pro-002.html">Gemini 1.5 Pro 002 (Google)</a>
 <a class="block text-blue-600 hover:underline" href="results/gemini-1-5-pro.html">Gemini 1.5 Pro (Google)</a>
@@ -111,13 +125,13 @@
 <a class="block text-blue-600 hover:underline" href="results/grok-2-beta.html">Grok-2 Beta (xAI)</a>
 </div>
 </div>
-<!-- Analysis and Conclusions Section -->
 <div class="bg-white rounded-lg shadow-md">
-<button @click="analysisOpen = !analysisOpen" class="w-full px-4 py-3 text-left font-semibold flex justify-between items-center md:hidden">
-<span class="text-xl font-semibold">Analysis and Conclusions</span>
-<svg :class="{'rotate-180': analysisOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</button>
-<h2 class="px-4 py-3 font-semibold hidden md:block text-xl">Analysis and Conclusions</h2>
+<div @click="analysisOpen = !analysisOpen" class="px-4 py-3 flex justify-between items-center cursor-pointer">
+<h2 class="text-xl font-semibold">Analysis and Conclusions</h2>
+<svg :class="{'rotate-180': analysisOpen}" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
 <div class="px-4 py-2 space-y-2" x-show="analysisOpen" x-transition="">
 <a class="block text-blue-600 hover:underline" href="methodology.html">Methodology</a>
 <a class="block text-blue-600 hover:underline" href="analysis-conclusions.html">Key Findings and Implications</a>
@@ -126,6 +140,7 @@
 </div>
 </div>
 </aside>
+<!--FINCLUDE-->
 <main class="w-full md:w-3/4 pr-0 md:pr-8" role="main">
 <section class="bg-white shadow-md rounded-lg p-6 mb-8">
 <h1 class="text-3xl font-bold mb-6">In-Depth Analysis</h1>
@@ -299,31 +314,35 @@
 </section>
 </main>
 </div>
+<!--FINCLUDE:footer-->
 <footer class="bg-gray-100 py-4 mt-8">
 <div class="container mx-auto px-4 text-center">
 <p class="text-sm text-gray-600">
-            © 2024 ExplainTheUniverse.org This work is licensed under the <a class="text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a>.
-            <br/>
-<span class="text-xs">(License allowing sharing and adapting the content as long as it is properly attributed and shared under the same license)</span>
+                    © 2024 ExplainTheUniverse.org This work is licensed under the <a class="text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">Creative Commons Attribution-ShareAlike 4.0
+                        International License (CC BY-SA 4.0)</a>.
+                    <br/>
+<span class="text-xs">(License allowing sharing and adapting the content as long as it is properly
+                        attributed and shared under the same license)</span>
 </p>
 <p class="text-sm text-gray-600 mt-2">
-            Contact: <a class="text-blue-600 hover:underline" href="mailto:contact@explaintheuniverse.org">contact@explaintheuniverse.org</a>
+                    Contact: <a class="text-blue-600 hover:underline" href="mailto:contact@explaintheuniverse.org">contact@explaintheuniverse.org</a>
 </p>
 </div>
 </footer>
 </div>
 <script>
-window.addEventListener('scroll', function() {
-    var header = document.getElementById('header');
-    var content = document.getElementById('content');
-    if (window.scrollY > 10) {
-        header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
-        content.style.paddingTop = (header.offsetHeight + 32) + 'px';
-    } else {
-        header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
-        content.style.paddingTop = '2rem';
-    }
-});
-</script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            var content = document.getElementById('content');
+            if (window.scrollY > 10) {
+                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                content.style.paddingTop = (header.offsetHeight + 32) + 'px';
+            } else {
+                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                content.style.paddingTop = '2rem';
+            }
+        });
+    </script>
+<!--FINCLUDE-->
 </body>
 </html>
