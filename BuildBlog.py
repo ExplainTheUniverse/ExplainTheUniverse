@@ -25,9 +25,15 @@ class TailwindTreeprocessor(Treeprocessor):
         elif element.tag == 'p':
             element.set('class', 'mb-6')
         elif element.tag == 'ul':
-            element.set('class', 'list-disc pl-6 mb-6')
-        elif element.tag == 'li':
-            element.set('class', 'mb-2')
+            element.set('class', 'list-disc pl-6 mb-6 space-y-2 marker:text-gray-500')
+            # Style list items within ul
+            for li in element.findall('li'):
+                li.set('class', 'pl-2')
+        elif element.tag == 'ol':
+            element.set('class', 'list-decimal pl-6 mb-6 space-y-2 marker:text-gray-500')
+            # Style list items within ol
+            for li in element.findall('li'):
+                li.set('class', 'pl-2')
         elif element.tag == 'blockquote':
             ## border-l-4 border-blue-600 pl-4 mb-8 bg-gray-50 p-4
             element.set('class', 'border-l-4 border-blue-600 pl-4 mb-8 bg-gray-50 p-4 text-gray-700 italic')
