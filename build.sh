@@ -1,9 +1,12 @@
 #!/bin/bash
 
-echo "Running PagesBuilder.py..."
-python3 PagesBuilder.py
+echo "Running Finclude.py..."
+python3 Finclude.py
 
-echo "Running ResultBuilder.py..."
-python3 ResultBuilder.py
+echo "Running BuildPages.py..."
+python3 BuildPages.py
+
+echo "Running BuildResults.py..."
+python3 BuildResults.py
 
 echo "Both scripts have been executed."
