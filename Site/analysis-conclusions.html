@@ -37,7 +37,7 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-normal">
-<header class="bg-cover bg-center transition-all duration-300 ease-in-out" style="background-image: url('/images/universe.jpg');">
+<header class="bg-cover bg-center transition-all duration-300 ease-in-out" style="background-image: url('/images/universe.jpg');" id="header">
 <div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out relative">
 <!--FINCLUDE-->
 <a class="absolute top-2 right-4 text-gray-300 hover:text-white transition-colors duration-300" href="pt/analise-conclusoes.html">🇧🇷<span class="text-sm">PT</span></a>
@@ -85,16 +85,22 @@
             }
         }
     </style>
-<script>
+    <script>
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
             var content = document.getElementById('content');
             if (window.scrollY > 10) {
-                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'scrolled');
-                content.style.paddingTop = (header.offsetHeight) + 'px';
+                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                header.classList.add('scrolled');
+                // Add extra padding to account for fixed header height
+                var headerHeight = header.offsetHeight;
+                content.style.marginTop = headerHeight + 'px';
+                content.style.paddingTop = '2rem';
             } else {
-                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'scrolled');
-                content.style.paddingTop = '0';
+                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                header.classList.remove('scrolled');
+                content.style.marginTop = '0';
+                content.style.paddingTop = '2rem';
             }
         });
     </script>
@@ -224,19 +230,7 @@
 </div>
 </footer>
 </div>
-<script>
-        window.addEventListener('scroll', function () {
-            var header = document.getElementById('header');
-            var content = document.getElementById('content');
-            if (window.scrollY > 10) {
-                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
-                content.style.paddingTop = (header.offsetHeight + 32) + 'px';
-            } else {
-                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
-                content.style.paddingTop = '2rem';
-            }
-        });
-    </script>
+
 <!--FINCLUDE-->
 </body>
 </html>
