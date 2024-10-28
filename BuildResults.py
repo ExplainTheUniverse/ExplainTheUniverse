@@ -75,6 +75,31 @@ def apply_template(template, ai_name, exec_date, prompts, en=False):
     # Find the container for prompts
     prompt_container = soup.find('div', class_='space-y-4')
     
+    # Check for audio file
+    md_basename = os.path.basename(markdown_file).replace('.md', '.mp3')
+    audio_path = os.path.join('Site/audio', md_basename)
+    
+    if os.path.exists(audio_path):
+        # Create audio section
+        audio_section = soup.new_tag('section', **{'class': 'bg-white shadow-md rounded-lg p-6 mb-8 text-center print:hidden', 'id': 'listen'})
+        
+        # Add heading
+        heading = soup.new_tag('h2', **{'class': 'text-2xl font-semibold mb-4'})
+        heading.string = 'Listen to a discussion analyzing this AI generated theory'
+        audio_section.append(heading)
+        
+        # Add audio element
+        audio = soup.new_tag('audio', **{'class': 'w-full', 'controls': ''})
+        source = soup.new_tag('source', src=f"../audio/{md_basename}", type='audio/mpeg')
+        fallback = soup.new_string('Your browser does not support the audio element.')
+        
+        audio.append(source)
+        audio.append(fallback)
+        audio_section.append(audio)
+        
+        # Insert audio section before the prompt container
+        prompt_container.insert_before(audio_section)
+    
     # Clear existing prompts
     prompt_container.clear()
     
