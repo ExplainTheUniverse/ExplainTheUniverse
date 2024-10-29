@@ -8,9 +8,12 @@ The methodology for this experiment was straightforward and designed to be easil
 
 The complete responses are in the menu **Explore the Results**. The web interfaces used for each model were:
 
-- Claude.ai for Claude 3.5 Sonnet (Anthropic)
-- ChatGPT.com for GPT-4o and o1-preview (OpenAI)
-- AIStudio.google.com for Gemini 1.5 Pro and Gemini 1.5 Pro 002 (Google)
+- [Claude.ai](https://claude.ai) for [Claude 3.5 Sonnet](results/claude-3-5-sonnet.html) (Anthropic)
+- [ChatGPT.com](https://chatgpt.com) for [GPT-4o](results/gpt-4o.html) and [o1-preview](results/o1-preview.html) (OpenAI)
+- [AIStudio.google.com](https://ai.google.com) for [Gemini 1.5 Pro](results/gemini-1-5-pro.html) and [Gemini 1.5 Pro 002](results/gemini-1-5-pro-002.html) (Google)
+- [Chat.mistral.ai](https://chat.mistral.ai) for [Mistral Large 2](results/mistral-large-2.html) (Mistral)
+- [Dashboard.cohere.com](https://dashboard.cohere.com/playground/chat) for [Command R+](results/command-r-plus.html) (Cohere)
+- [x.com/i/grok](https://x.com/i/grok) for [Grok-2 Beta](results/grok-2-beta.html) (xAI)
 
 This approach ensures a level playing field for all models and allows for direct comparison of their outputs. It also makes the experiment easily reproducible by anyone with access to these AI interfaces.
 

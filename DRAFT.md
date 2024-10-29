@@ -13,7 +13,7 @@ replace: \n#### $1. **
 
 * sonnet
 search: \*\*: 
-Zreplace: **: \n
+replace: **: \n
 
 * Command R+
 search: :\*\*\n- 
