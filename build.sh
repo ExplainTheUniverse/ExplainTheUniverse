@@ -12,4 +12,7 @@ python3 Site/blog/GeneratePostsList.py
 echo "Running BuildResults.py..."
 python3 BuildResults.py
 
+echo "Running BuildBlog.py..."
+python3 BuildBlog.py
+
 echo "Both scripts have been executed."

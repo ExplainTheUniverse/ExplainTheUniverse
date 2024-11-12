@@ -15,7 +15,7 @@ On *Explain The Universe*, we dive into intriguing questions that align with our
 The AI's responses offer a fascinating perspective on how certain beliefs might limit or shape our collective growth.  
 
 ---
-## Claude 3.5 Sonnet (Anthropic)
+## AI Model: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: If Satan exists, what false metaphysical theory might he create and spread as a belief to prevent humanity from realizing its full potential?
 
