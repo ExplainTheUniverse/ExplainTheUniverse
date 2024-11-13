@@ -10,6 +10,24 @@
     <link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="../favicon/site.webmanifest" rel="manifest"/>
+    <style>
+        .post-summary {
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .post-summary .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .post-summary a {
+            color: white;
+        }
+        .post-summary a:hover {
+            color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-cover bg-center transition-all duration-300 ease-in-out" style="background-image: url('../images/universe.jpg');">
@@ -42,25 +60,6 @@
 
             <!-- Summaries of All Blog Posts -->
             {{post_summaries}}
-        </div>
-
-        <!-- Categories -->
-        <div class="mt-12 bg-white rounded-lg shadow-md p-6">
-            <h2 class="text-xl font-semibold mb-4">Categories</h2>
-            <div class="flex flex-wrap gap-2">
-                <a href="/blog/category/ai-analysis" class="px-3 py-1 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200">
-                    AI Analysis
-                </a>
-                <a href="/blog/category/philosophy" class="px-3 py-1 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200">
-                    Philosophy
-                </a>
-                <a href="/blog/category/methodology" class="px-3 py-1 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200">
-                    Methodology
-                </a>
-                <a href="/blog/category/findings" class="px-3 py-1 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200">
-                    Findings
-                </a>
-            </div>
         </div>
     </div>
 

@@ -17,46 +17,43 @@ def extract_summary(content, max_length=200):
         summary = summary[:max_length].rsplit(' ', 1)[0] + '...'
     return summary
 
-def generate_post_summary(post_metadata, summary):
+def generate_post_summary(post_metadata, summary, image_url):
     """
     Generates the HTML block for a single post summary.
     """
     title = post_metadata.get('title', 'No Title')
     date = post_metadata.get('date', 'No Date')
     author = post_metadata.get('author', 'Unknown Author')
-    categories = post_metadata.get('categories', [])
     slug = post_metadata.get('slug', title.lower().replace(' ', '-'))
     link = f"{slug}.html"
 
-    category_links = ' '.join(
-        f'<a href="/blog/category/{cat.lower().replace(" ", "-")}" class="px-3 py-1 bg-gray-100 rounded-full text-gray-700 hover:bg-gray-200">{cat}</a>'
-        for cat in categories
-    )
+    # If an image URL is provided, add it as a background image
+    background_style = f"background-image: url('{image_url}');" if image_url else ""
 
     html = f'''
-    <div class="bg-white rounded-lg shadow-md p-6">
-        <span class="text-sm text-gray-500">{date} • {author}</span>
-        <h2 class="text-xl font-bold mt-2 mb-4">
-            <a href="{link}" class="text-blue-600 hover:text-blue-800">
-                {title}
+    <div class="bg-black bg-opacity-50 rounded-lg shadow-md p-6 post-summary" style="{background_style}">
+        <div class="overlay">
+            <span class="text-sm text-gray-300">{date} • {author}</span>
+            <h2 class="text-xl font-bold mt-2 mb-4">
+                <a href="{link}" class="text-white hover:text-gray-200">
+                    {title}
+                </a>
+            </h2>
+            <p class="text-gray-200 mb-4">{summary}</p>
+            <a href="{link}" class="text-white hover:text-gray-200">
+                Read More →
             </a>
-        </h2>
-        <p class="text-gray-700 mb-4">{summary}</p>
-        <div class="flex flex-wrap gap-2 mb-4">
-            {category_links}
         </div>
-        <a href="{link}" class="text-blue-600 hover:text-blue-800">
-            Read More →
-        </a>
     </div>
     '''
     return html
 
-def process_markdown_files(markdown_dir='Site/content/blog'):
+def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/images/blog'):
     """
     Processes all markdown files to extract summaries and generate HTML blocks.
     """
     markdown_path = Path(markdown_dir)
+    image_path = Path(images_dir)
     posts = []
 
     for md_file in markdown_path.glob('**/*.md'):
@@ -69,10 +66,21 @@ def process_markdown_files(markdown_dir='Site/content/blog'):
             if 'slug' not in metadata:
                 metadata['slug'] = md_file.stem
 
+            slug = metadata['slug']
+            # Assume image has the same name as markdown file with common image extensions
+            possible_extensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif']
+            image_url = None
+            for ext in possible_extensions:
+                img_file = image_path / f"{slug}{ext}"
+                if img_file.is_file():
+                    image_url = f"../images/blog/{slug}{ext}"
+                    break
+
             summary = extract_summary(content)
             posts.append({
                 'metadata': metadata,
-                'summary': summary
+                'summary': summary,
+                'image_url': image_url
             })
 
     # Sort posts by date descending
@@ -96,7 +104,7 @@ def update_posts_html(posts, template_path='Site/blog/_template-posts.html', out
         return
 
     # Generate HTML for all posts
-    summaries_html = '\n'.join(generate_post_summary(post['metadata'], post['summary']) for post in posts)
+    summaries_html = '\n'.join(generate_post_summary(post['metadata'], post['summary'], post.get('image_url')) for post in posts)
 
     # Replace the placeholder with the generated summaries
     if '{{post_summaries}}' in template:
