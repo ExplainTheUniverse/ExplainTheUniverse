@@ -111,6 +111,19 @@ class BlogPostConverter:
             for category in categories
         )
 
+    def find_header_image(self, md_path):
+        """Find corresponding header image for the markdown file"""
+        md_path = Path(md_path)
+        images_dir = Path('Site/images/blog')
+        image_extensions = ['.webp', '.jpg', '.jpeg', '.png']
+        base_name = md_path.stem  # e.g., 'alien-contact' from 'alien-contact.md'
+
+        for ext in image_extensions:
+            image_path = images_dir / f"{base_name}{ext}"
+            if image_path.exists():
+                return str(image_path.relative_to('Site'))
+        return None
+
     def convert(self, md_path, output_path):
         """Convert markdown file to HTML and save"""
         # Read and parse markdown
@@ -125,12 +138,21 @@ class BlogPostConverter:
         # Generate category tags
         category_links = self.generate_category_links(post_data['metadata']['categories'])
         
+        # Find header image if exists
+        header_image = self.find_header_image(md_path)
+        header_image_html = f'''
+        <div class="mb-6">
+            <img src="../{header_image}" alt="Header Image for {post_data['metadata']['title']}" class="w-full h-auto rounded-lg"/>
+        </div>
+        ''' if header_image else '{{header_image}}'
+
         # Create the meta section
         meta_section = f'''
         <div class="mb-8">
             <span class="text-sm text-gray-500">{formatted_date} • {post_data['metadata']['author']}</span>
             <h2 class="text-3xl font-bold mt-2">{post_data['metadata']['title']}</h2>
         </div>
+        {header_image_html}
         '''
         
         # Replace placeholders in template
@@ -139,7 +161,8 @@ class BlogPostConverter:
             '{{title}}': post_data['metadata']['title'],
             '{{meta}}': meta_section,
             '{{content}}': content_html,
-            '{{categories}}': category_links
+            '{{categories}}': category_links,
+            '{{header_image}}': ''  # In case no image is present
         }
         
         for placeholder, value in replacements.items():
