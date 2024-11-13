@@ -22,6 +22,8 @@ class TailwindTreeprocessor(Treeprocessor):
             element.set('class', 'text-2xl font-bold mb-4 mt-8')
         elif element.tag == 'h3':
             element.set('class', 'text-xl font-semibold mb-3')
+        elif element.tag == 'h4':
+            element.set('class', 'font-semibold mb-3')
         elif element.tag == 'p':
             element.set('class', 'mb-6')
         elif element.tag == 'ul':
