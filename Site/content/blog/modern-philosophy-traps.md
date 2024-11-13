@@ -1,5 +1,5 @@
 ---
-title: "The Devil's Trap: How AI Unmasked Modern Philosophy's Potential Pitfalls"
+title: "The AI Experiment That Questions Modern Philosophy"
 date: "2024-10-27"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Findings"]
