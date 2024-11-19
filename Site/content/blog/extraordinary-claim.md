@@ -347,6 +347,7 @@ Let me explore how reality has proven even stranger than Sagan's generation anti
 
 ### 1. Quantum Mechanics: Beyond Copenhagen
 While Sagan worked within the Copenhagen interpretation, modern experiments have revealed even more unsettling features:
+
 - Quantum entanglement now operates at macroscopic scales and room temperature
 - The delayed choice quantum eraser suggests retroactive determination of particle histories
 - Quantum Darwinism indicates reality emerges through information decoherence
