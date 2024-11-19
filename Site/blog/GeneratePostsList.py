@@ -57,6 +57,10 @@ def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/im
     posts = []
 
     for md_file in markdown_path.glob('**/*.md'):
+        # Skip files that start with 'draft-'
+        if md_file.stem.startswith('draft-'):
+            continue
+            
         with open(md_file, 'r', encoding='utf-8') as f:
             post = frontmatter.load(f)
             content = post.content

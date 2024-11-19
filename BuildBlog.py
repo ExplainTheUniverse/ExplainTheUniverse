@@ -185,6 +185,11 @@ def process_blog_posts(markdown_dir='content/blog', output_dir='public/blog', te
     
     # Process each markdown file
     for md_file in markdown_dir.glob('**/*.md'):
+        # Skip draft posts
+        if md_file.stem.startswith('draft-'):
+            print(f"Skipping draft post: {md_file}")
+            continue
+            
         # Determine output path
         relative_path = md_file.relative_to(markdown_dir)
         output_path = output_dir / relative_path.with_suffix('.html')
