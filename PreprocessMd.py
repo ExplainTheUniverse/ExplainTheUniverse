@@ -17,7 +17,7 @@ def process_markdown_file(file_path):
             
             # Check if line is a numbered list item with bold text
             is_numbered_bold = bool(re.match(r'^\d+\.\s+\*\*.*\*\*', current_line))
-            if is_numbered_bold:
+            if is_numbered_bold and len(current_line) < 64:
                 line = '#### ' + line
             
             # Check if current line starts a list
