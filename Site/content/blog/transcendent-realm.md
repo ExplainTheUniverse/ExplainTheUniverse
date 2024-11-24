@@ -3,6 +3,7 @@ title: "The Transcendent Realm: How AI Explores Non-Physical Reality"
 date: "2024-11-12"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Findings"]
+readingTime: "45 minutes"
 ---
 
 > What lies beyond our physical reality? In this deep exploration, we tasked AI with investigating transcendent experiences that feel "more real than real." The results challenge our understanding of consciousness and reality itself, suggesting profound implications for how we view existence.

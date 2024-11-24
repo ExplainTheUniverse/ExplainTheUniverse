@@ -3,6 +3,7 @@ title: "Intelligent Design of the Universe"
 date: "2024-11-05"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Intelligent Design", "Consciousness Studies"]
+readingTime: "35 minutes"
 ---
 
 > What if the universe was consciously designed? In this thought-provoking exploration, we tasked AI with contemplating the fundamental nature and purpose of our cosmos. The results challenge our understanding of consciousness, purpose, and humanity's place in existence.

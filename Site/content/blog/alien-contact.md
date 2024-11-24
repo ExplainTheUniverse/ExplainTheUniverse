@@ -3,6 +3,7 @@ title: "Evidence for Extraterrestrial Contact: A Scientific Analysis"
 date: "2024-11-09"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Alien Contact", "Consciousness Studies"]
+readingTime: "45 minutes"
 ---
 
 > Are we alone in the universe? In this comprehensive exploration, we tasked AI with investigating the compelling evidence for extraterrestrial contact throughout human history. The results challenge our understanding of technology, space travel, and humanity's place in the cosmos.

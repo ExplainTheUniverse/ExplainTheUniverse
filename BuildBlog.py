@@ -146,10 +146,13 @@ class BlogPostConverter:
         </div>
         ''' if header_image else '{{header_image}}'
 
-        # Create the meta section
+        # Create the meta section with reading time
+        reading_time = post_data['metadata'].get('readingTime', '')
+        reading_time_html = f' • {reading_time}' if reading_time else ''
+        
         meta_section = f'''
         <div class="mb-8">
-            <span class="text-sm text-gray-500">{formatted_date} • {post_data['metadata']['author']}</span>
+            <span class="text-sm text-gray-500">{formatted_date} • {post_data['metadata']['author']}{reading_time_html}</span>
             <h2 class="text-3xl font-bold mt-2">{post_data['metadata']['title']}</h2>
         </div>
         {header_image_html}

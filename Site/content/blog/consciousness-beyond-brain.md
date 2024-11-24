@@ -3,6 +3,7 @@ title: "Consciousness Beyond the Brain: Evidence for Non-Local Awareness"
 date: "2024-11-13"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Findings"]
+readingTime: "45 minutes"
 ---
 
 > Can consciousness exist independently of the brain? In this groundbreaking investigation, we challenged AI to examine evidence suggesting awareness may transcend physical neural activity. The findings point to possibilities that could revolutionize our understanding of human consciousness.
