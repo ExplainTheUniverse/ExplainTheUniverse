@@ -3,7 +3,7 @@ title: "The Meaning Crisis: How Scientific Materialism May Limit Human Potential
 date: "2024-11-11"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Meaning Crisis"]
-readingTime: "45 minutes"
+readingTime: "30 minutes"
 ---
 
 > In this thought-provoking exploration, we challenged AI to investigate how scientific materialism might contribute to humanity's crisis of meaning. Through a series of carefully crafted prompts, we uncovered profound insights about the limitations of purely materialist worldviews and potential paths toward more comprehensive frameworks that can better account for human experience and meaning.

@@ -3,7 +3,7 @@ title: "Beyond Sagan's Razor: When Dismissing Experience Becomes the Extraordina
 date: "2024-11-20"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Science", "Philosophy of Science"]
-readingTime: "45 minutes"
+readingTime: "27 minutes"
 ---
 
 > Carl Sagan famously stated that "extraordinary claims require extraordinary evidence." But what if dismissing vast domains of human experience is itself an extraordinary claim? In this exploration, we challenge the limitations of strict scientific materialism and examine what mainstream science might be overlooking.

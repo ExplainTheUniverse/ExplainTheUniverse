@@ -3,7 +3,7 @@ title: "The Dangers of Scientific Materialism: A Critical Analysis"
 date: "2024-11-23" 
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Science"]
-readingTime: "35 minutes"
+readingTime: "18 minutes"
 ---
 
 > Could scientific materialism be limiting humanity's understanding of reality? In this deep exploration, we examine how a purely materialist worldview might constrain our understanding of consciousness, meaning, and the nature of existence itself.

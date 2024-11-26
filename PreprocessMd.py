@@ -6,11 +6,27 @@ import argparse
 from pathlib import Path
 
 def process_markdown_file(file_path):
-    """Process a single markdown file to ensure proper spacing before lists."""
+    """Process a single markdown file to ensure proper spacing before lists and update reading time."""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+            content = f.read()
         
+        # Calculate reading time if the file has a readingTime field
+        if 'readingTime:' in content:
+            # Count words in the main content (excluding front matter)
+            main_content = content.split('---', 2)[-1] if '---' in content else content
+            word_count = len(main_content.split())
+            reading_time = round(word_count / 200)  # Round to nearest minute
+            
+            # Replace existing readingTime value
+            content = re.sub(
+                r'readingTime:\s*"[^"]*"',
+                f'readingTime: "{reading_time} minutes"',
+                content
+            )
+        
+        # Process the content line by line for list formatting
+        lines = content.splitlines(True)
         processed_lines = []
         for i, line in enumerate(lines):
             current_line = line.strip()

@@ -3,7 +3,7 @@ title: "The AI Experiment That Questions Modern Philosophy"
 date: "2024-10-27"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Findings"]
-readingTime: "9 minutes"
+readingTime: "10 minutes"
 ---
 
 > Could our dominant philosophical frameworks be limiting human potential? In a revealing thought experiment, we asked AI to design a metaphysical theory meant to constrain humanity's growth. Its response bears an unsettling resemblance to many contemporary philosophical positions.
