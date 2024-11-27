@@ -111,20 +111,23 @@ class BlogPostConverter:
             for category in categories
         )
 
-    def find_header_image(self, md_path):
+    def find_header_image(self, md_path, output_lang='en'):
         """Find corresponding header image for the markdown file"""
         md_path = Path(md_path)
-        images_dir = Path('Site/images/blog')
+        images_dir = Path('Site/images/blog')  # Images are always in the main images directory
         image_extensions = ['.webp', '.jpg', '.jpeg', '.png']
         base_name = md_path.stem  # e.g., 'alien-contact' from 'alien-contact.md'
 
         for ext in image_extensions:
             image_path = images_dir / f"{base_name}{ext}"
             if image_path.exists():
-                return str(image_path.relative_to('Site'))
+                # For Portuguese pages, adjust the relative path to go up one more level
+                if output_lang == 'pt':
+                    return f"../../{str(image_path.relative_to('Site'))}"
+                return f"../{str(image_path.relative_to('Site'))}"
         return None
 
-    def convert(self, md_path, output_path):
+    def convert(self, md_path, output_path, output_lang='en'):
         """Convert markdown file to HTML and save"""
         # Read and parse markdown
         post_data = self.read_markdown(md_path)
@@ -139,10 +142,10 @@ class BlogPostConverter:
         category_links = self.generate_category_links(post_data['metadata']['categories'])
         
         # Find header image if exists
-        header_image = self.find_header_image(md_path)
+        header_image = self.find_header_image(md_path, output_lang)
         header_image_html = f'''
         <div class="mb-6">
-            <img src="../{header_image}" alt="Header Image for {post_data['metadata']['title']}" class="w-full h-auto rounded-lg"/>
+            <img src="{header_image}" alt="Header Image for {post_data['metadata']['title']}" class="w-full h-auto rounded-lg"/>
         </div>
         ''' if header_image else '{{header_image}}'
 
@@ -180,7 +183,7 @@ class BlogPostConverter:
         
         return output_path
 
-def process_blog_posts(markdown_dir='content/blog', output_dir='public/blog', template_path='templates/post.html'):
+def process_blog_posts(markdown_dir='content/blog', output_dir='public/blog', template_path='templates/post.html', lang='en'):
     """Process all markdown files in a directory"""
     converter = BlogPostConverter(template_path)
     markdown_dir = Path(markdown_dir)
@@ -199,7 +202,7 @@ def process_blog_posts(markdown_dir='content/blog', output_dir='public/blog', te
         
         # Convert the file
         try:
-            converter.convert(str(md_file), str(output_path))
+            converter.convert(str(md_file), str(output_path), lang)
             print(f"Successfully converted {md_file} to {output_path}")
         except Exception as e:
             print(f"Error converting {md_file}: {str(e)}")
@@ -212,7 +215,25 @@ def main():
     
     args = parser.parse_args()
     
-    process_blog_posts(args.markdown_dir, args.output_dir, args.template)
+    # Process English content
+    process_blog_posts(
+        args.markdown_dir,
+        args.output_dir,
+        args.template,
+        lang='en'
+    )
+    
+    # Process Portuguese content
+    pt_markdown_dir = str(Path(args.markdown_dir).parent.parent / 'pt' / 'content' / 'blog')
+    pt_output_dir = str(Path(args.output_dir).parent / 'pt' / 'blog')
+    pt_template = str(Path(args.template).parent.parent / 'pt' / 'blog' / '_template.html')
+    
+    process_blog_posts(
+        pt_markdown_dir,
+        pt_output_dir,
+        pt_template,
+        lang='pt'
+    )
 
 if __name__ == '__main__':
     main()

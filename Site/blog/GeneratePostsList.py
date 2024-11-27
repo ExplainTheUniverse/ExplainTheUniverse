@@ -48,9 +48,13 @@ def generate_post_summary(post_metadata, summary, image_url):
     '''
     return html
 
-def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/images/blog'):
+def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/images/blog', output_lang='en'):
     """
     Processes all markdown files to extract summaries and generate HTML blocks.
+    Parameters:
+        markdown_dir: Directory containing markdown files
+        images_dir: Directory containing blog images
+        output_lang: Language code ('en' or 'pt') to determine output paths
     """
     markdown_path = Path(markdown_dir)
     image_path = Path(images_dir)
@@ -77,7 +81,7 @@ def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/im
             for ext in possible_extensions:
                 img_file = image_path / f"{slug}{ext}"
                 if img_file.is_file():
-                    image_url = f"../images/blog/{slug}{ext}"
+                    image_url = f"../images/blog/{slug}{ext}" if output_lang == 'en' else f"../../images/blog/{slug}{ext}"  
                     break
 
             summary = extract_summary(content)
@@ -96,10 +100,18 @@ def process_markdown_files(markdown_dir='Site/content/blog', images_dir='Site/im
 
     return posts
 
-def update_posts_html(posts, template_path='Site/blog/_template-posts.html', output_html_path='Site/blog/_posts.html'):
+def update_posts_html(posts, output_lang='en'):
     """
     Updates the _posts.html file with the generated post summaries.
+    Parameters:
+        posts: List of post data
+        output_lang: Language code ('en' or 'pt') to determine template and output paths
     """
+    # Define paths based on language
+    base_path = 'Site/pt/blog' if output_lang == 'pt' else 'Site/blog'
+    template_path = f"{base_path}/_template-posts.html"
+    output_html_path = f"{base_path}/_posts.html"
+
     try:
         with open(template_path, 'r', encoding='utf-8') as f:
             template = f.read()
@@ -124,8 +136,21 @@ def update_posts_html(posts, template_path='Site/blog/_template-posts.html', out
     print(f"Updated {output_html_path} with {len(posts)} post summaries.")
 
 def main():
-    posts = process_markdown_files()
-    update_posts_html(posts)
+    # Process English content
+    posts_en = process_markdown_files(
+        markdown_dir='Site/content/blog',
+        images_dir='Site/images/blog',
+        output_lang='en'
+    )
+    update_posts_html(posts_en, output_lang='en')
+
+    # Process Portuguese content
+    posts_pt = process_markdown_files(
+        markdown_dir='Site/pt/content/blog',
+        images_dir='Site/images/blog',  # Images directory remains the same
+        output_lang='pt'
+    )
+    update_posts_html(posts_pt, output_lang='pt')
 
 if __name__ == '__main__':
     main() 
