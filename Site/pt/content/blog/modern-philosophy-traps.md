@@ -98,7 +98,7 @@ O antídoto para tal mentalidade social envolveria:
 Embora muitas dessas doutrinas permeiem a sociedade, reconhecê-las e desafiá-las pode capacitar indivíduos e comunidades a se reconectarem com um senso de propósito, potencial e bem-estar coletivo.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Se Satanás existe, que falsa teoria metafísica ele poderia criar e espalhar como uma crença para impedir a humanidade de realizar seu pleno potencial?
 

@@ -162,7 +162,7 @@ Desafiar a visão de mundo materialista convencional poderia catalisar uma era d
 O resultado seria uma sociedade enraizada não na separação e na exploração, mas na unidade, no respeito e no reconhecimento de que cada um de nós — e toda a vida — desempenha um papel vital em uma realidade grandiosa e interconectada.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Existe um ponto em comum de experiências vívidas, sentidas mais reais do que o mundo físico, em um reino não físico? Seja profundo, extenso e assertivo.
 

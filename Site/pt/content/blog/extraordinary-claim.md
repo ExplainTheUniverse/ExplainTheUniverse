@@ -269,7 +269,7 @@ Os paradigmas de compreensão científica de Carl Sagan, baseados em evidências
 Carl Sagan abraçou a humildade científica e o espanto com o desconhecido, mas realidades disruptivas como a mecânica quântica, o problema do ajuste fino, a consciência e o horizonte cosmológico desafiam até mesmo seus paradigmas. Esses fenômenos sugerem que a realidade pode ser muito mais estranha e interconectada do que a ciência atualmente compreende. Se o legado de Sagan nos ensina alguma coisa, é que a verdadeira compreensão requer não apenas um ceticismo rigoroso, mas também a disposição de explorar e integrar o misterioso, o subjetivo e o transcendente. A realidade não é apenas vasta — é profundamente disruptiva.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Muitos cientistas buscam uma explicação abrangente da realidade e do Universo. O que eles podem ignorar devido às limitações do método científico? Seja profundo, extenso e assertivo.
 

@@ -232,7 +232,7 @@ Essa transição pode marcar o início de uma nova época na história humana �
 A convergência da ciência e da espiritualidade não é uma fantasia utópica, mas uma trajetória plausível enraizada na capacidade da humanidade tanto para a exploração empírica quanto para a introspecção profunda. Ao abraçar essa síntese, estamos prontos para criar um futuro que transcende as limitações do materialismo, promove a harmonia global e reorienta nosso propósito coletivo em direção ao significado, à sabedoria e ao sagrado. Essa transição, embora repleta de desafios, oferece à humanidade uma oportunidade sem precedentes de se redefinir como uma espécie científica e espiritual — um todo integrado capaz de moldar seu destino com percepção, compaixão e criatividade.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Estamos em um momento crucial em que o materialismo atinge o pico enquanto um renascimento espiritual começa? Seja profundo, extenso e assertivo.
 

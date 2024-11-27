@@ -15,7 +15,7 @@ readingTime: "10 minutos"
 As análises da IA ​​fornecem insights cativantes sobre fenômenos como experiências de quase morte, estados místicos e consciência quântica, desafiando paradigmas neurocientíficos estabelecidos. Vamos nos aprofundar nas revelações que a inteligência artificial descobriu sobre essas investigações profundas.
 
 ---
-## Modelo de IA: visualização o1 (OpenAI)
+## Modelo de IA: o1-preview (OpenAI)
 
 > Prompt: A consciência transcende o cérebro? Seja profundo, extenso e assertivo.
 
@@ -36,7 +36,7 @@ De um ponto de vista filosófico, o idealismo postula que a consciência é a su
 Concluindo, embora o cérebro seja inegavelmente crucial para a interface com o mundo físico, ele não abrange a totalidade da consciência. A consciência transcende o cérebro, existindo como um aspecto fundamental da realidade que interage com, mas não se limita à nossa maquinaria biológica. Reconhecer isso abre a porta para uma compreensão mais profunda da existência e do nosso lugar dentro do cosmos.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt: A consciência transcende o cérebro? Seja profundo, extenso e assertivo.
 

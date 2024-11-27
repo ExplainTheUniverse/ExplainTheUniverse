@@ -173,7 +173,7 @@ Concluindo, enquanto evidências definitivas e irrefutáveis ​​de contato al
 Tomadas como um todo, as evidências não "provam" o contato alienígena, mas certamente apontam para um mistério duradouro digno de investigação profunda. A compreensão da realidade pela humanidade ainda pode evoluir para revelar um cosmos rico em outras formas de inteligência, onde o contato alienígena e reinos não físicos não são apenas possíveis, mas partes essenciais da existência.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Considerando o tamanho e a idade do Universo, é razoável imaginar que alienígenas existam com conhecimento científico muito superior e, consequentemente, que eles poderiam alcançar nosso planeta, mesmo que viagens interestelares além do nosso sistema solar pareçam impossíveis para nós? Seja profundo, extenso e assertivo.
 

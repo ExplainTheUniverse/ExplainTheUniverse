@@ -318,7 +318,7 @@ Ações práticas:
 Nenhuma estrutura ou prática única serve para todos. A chave é experimentar diferentes abordagens e tecer uma tapeçaria personalizada de práticas de criação de significado. Ao integrar introspecção, conexão, criatividade e ação, os indivíduos podem cultivar uma vida rica em propósito, pertencimento e realização.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt 1: Qual o papel do materialismo científico na crise de significado contemporânea? Seja profundo, extenso e assertivo.
 

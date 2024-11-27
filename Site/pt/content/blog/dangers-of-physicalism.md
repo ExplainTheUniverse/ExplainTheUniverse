@@ -287,7 +287,7 @@ Várias estruturas tentam transcender ou complementar o materialismo integrando 
 Embora o materialismo tenha impulsionado imenso progresso na ciência e na tecnologia, suas limitações estimularam o desenvolvimento de estruturas alternativas que integram consciência, espiritualidade e complexidade. Essas abordagens visam fornecer uma compreensão mais holística da realidade, unindo as dimensões subjetiva e objetiva da existência.
 
 ---
-## Modelo de IA: Claude 3.5 Soneto (Antrópico)
+## Modelo de IA: Claude 3.5 Sonnet (Anthropic)
 
 > Prompt A: 1. O que é materialismo científico e quão dominante ele é na ciência moderna? 2. Quais são as principais afirmações e suposições do materialismo científico?
 
