@@ -62,10 +62,9 @@ def extract_content(markdown_content):
 def apply_template(template, ai_name, exec_date, prompts, en=False):
     soup = BeautifulSoup(template, 'html.parser')
     
-    # Update AI name
-    str_placeholder = soup.find(string=re.compile(r'\[AI_NAME\]'))
-    if str_placeholder:
-        str_placeholder.replace_with(ai_name)
+    # Update AI name - find all occurrences
+    for str_placeholder in soup.find_all(string=re.compile(r'\[AI_NAME\]')):
+        str_placeholder.replace_with(str_placeholder.string.replace('[AI_NAME]', ai_name))
     
     # Update exec date
     str_placeholder = soup.find(string=re.compile(r'\[EXEC_DATE\]'))
