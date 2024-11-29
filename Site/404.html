@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="An experiment at the intersection of technology, science, and philosophy" name="description"/>
+<title>AIs Try to Explain the Universe</title>
+<meta content="Explore how different AI models attempt to explain fundamental questions about existence, consciousness, and the nature of reality through philosophical and scientific lenses" name="description"/>
+
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+        @media (min-width: 768px) {
+            .content-wrapper {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .sidebar {
+                width: 25%;
+                position: sticky;
+                top: 5rem;
+                height: calc(100vh - 5rem);
+            }
+
+            .main-content {
+                width: 75%;
+                padding-right: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal">
+<header class="bg-cover bg-center transition-all duration-300 ease-in-out" id="header" style="background-image: url('/images/universe.jpg');">
+<div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out relative">
+
+
+
+<a class="text-white hover:text-white" href="https://explaintheuniverse.org/">
+<h1 class="text-2xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out">
+            AIs Try to Explain the Universe
+        </h1>
+</a>
+<p class="text-center text-white">
+            An experiment at the intersection of technology, science, and philosophy
+        </p>
+</div>
+</header>
+<style>
+        #header .container {
+            transition: padding 0.3s ease-in-out;
+        }
+
+        #header h1,
+        #header p {
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        #header.scrolled .container {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        #header.scrolled h1 {
+            font-size: 1.3rem;
+        }
+
+        #header.scrolled p {
+            font-size: 0.875rem;
+        }
+
+        @media (min-width: 768px) {
+            #header.scrolled h1 {
+                font-size: 2rem;
+            }
+
+            #header.scrolled p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            var content = document.getElementById('content');
+            if (window.scrollY > 10) {
+                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                header.classList.add('scrolled');
+                // Add extra padding to account for fixed header height
+                var headerHeight = header.offsetHeight;
+                content.style.marginTop = headerHeight + 'px';
+                content.style.paddingTop = '2rem';
+            } else {
+                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50');
+                header.classList.remove('scrolled');
+                content.style.marginTop = '0';
+                content.style.paddingTop = '2rem';
+            }
+        });
+    </script>
+<div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
+    <main class="w-full" role="main">
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 text-center">
+            <h1 class="text-3xl font-bold mb-6">Page Not Found</h1>
+            <p class="mb-4">Sorry, the page you're looking for doesn't exist.</p>
+            <a href="https://explaintheuniverse.org/" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                Return to Home
+            </a>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
