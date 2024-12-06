@@ -66,7 +66,7 @@ As principais afirmações e suposições do materialismo científico podem ser 
 #### 4. **Rejeição de explicações sobrenaturais**
 
    - O materialismo científico exclui explicações sobrenaturais, espirituais ou imateriais, considerando-as irrelevantes ou incompatíveis com evidências empíricas.
-   - Fenômenos atribuídos ao sobrenatural são supostamente responsáveis ​​por explicações materiais.
+   - Fenômenos atribuídos ao sobrenatural são supostamente explicáveis por causas materiais.
 
 #### 5. **Reducionismo**
 
