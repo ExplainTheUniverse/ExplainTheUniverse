@@ -2,7 +2,7 @@
 
 The methodology for this experiment was straightforward and designed to be easily replicable. We executed a series of 8 prompts in a single thread (maintaining the same context window) for each AI model. The process was as follows:
 
-1. We used the most common web user interface for each model, with default parameters and without any previous context or memory.
+1. We used the most common web user interface for each model, with default parameters and without any previous context or memory. Memory/chat history features were explicitly disabled where available to ensure each response was not influenced by past conversations.
 2. The same set of 8 prompts was presented to each model in the same order.
 3. Responses were collected and analyzed for each model.
 
