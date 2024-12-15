@@ -1,5 +1,5 @@
 ---
-title: "The Most Advanced AI of Late 2024 (o1) Chooses the Theory of Everything"
+title: "The Most Advanced AI Chooses the Theory of Everything"
 date: "2024-12-15"
 author: "Bruno Tonetto"
 categories: ["AI Analysis", "Philosophy", "Science"]
