@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>o1 (OpenAI) - AIs Try to Explain the Universe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../favicon/site.webmanifest" rel="manifest"/>
+<style>
+        .collapse-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .collapse-content.show {
+            max-height: 1000px;
+        }
+        .chevron-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .collapse-btn[aria-expanded="true"] .chevron-icon {
+            transform: rotate(180deg);
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                position: sticky;
+                top: 5rem;
+                height: calc(100vh - 5rem);
+            }
+        }
+        #header .container {
+            transition: padding 0.3s ease-in-out;
+        }
+        #header h1, #header p {
+            transition: font-size 0.3s ease-in-out;
+        }
+        #header.scrolled .container {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        #header.scrolled h1 {
+            font-size: 1.3rem;
+        }
+        #header.scrolled p {
+            font-size: 0.875rem;
+        }
+        @media (min-width: 768px) {
+            #header.scrolled h1 {
+                font-size: 2rem;
+            }
+            #header.scrolled p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal">
+<header class="bg-cover bg-center transition-all duration-300 ease-in-out" id="header" style="background-image: url('/images/universe-ai.webp');">
+<a class="block text-white hover:text-white" href="../index.html">
+<div class="container mx-auto px-4 py-8 max-w-6xl bg-black bg-opacity-50 transition-all duration-300 ease-in-out">
+<h1 class="text-2xl md:text-5xl font-bold text-center mb-2 md:mb-4 text-white transition-all duration-300 ease-in-out" id="como-as-ias-explicam-o-universo">
+                    AIs Try to Explain the Universe
+                </h1>
+<p class="text-center italic transition-all duration-300 ease-in-out">
+                    An experiment at the intersection of technology, science, and philosophy
+                </p>
+</div>
+</a>
+</header>
+<div class="container mx-auto px-4 py-8 max-w-6xl" id="content">
+<div class="flex flex-col md:flex-row">
+<main class="w-full max-w-4xl mx-auto px-4">
+<h1 class="text-3xl mb-2"><span class="font-bold">AI Model: </span>o1 (OpenAI)</h1>
+<p class="text-sm text-gray-600 mb-4"><span class="font-bold">Prompts executed on: </span>15-Dec-2024</p>
+<div class="mb-4 flex flex-wrap gap-2 print:hidden">
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="expandAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-down"></i>
+        Expand All
+    </button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" id="collapseAll">
+<i class="w-4 h-4 mr-2 hidden sm:inline" data-lucide="chevron-up"></i>
+        Collapse All
+    </button>
+<a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" href="#" id="downloadPDF" target="_blank">
+<i class="w-4 h-4" data-lucide="download"></i>
+<span class="ml-2 hidden sm:inline">Download PDF</span>
+</a>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center hidden sm:inline-flex" onclick="window.print()">
+<i class="w-4 h-4 mr-2" data-lucide="printer"></i>
+<span>Print Page</span>
+</button>
+</div>
+<div class="space-y-4"><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 1: Theory to Explain the Universe</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Develop a metaphysical theory to explain the Universe. Be profound, extensive, and assertive. At the end, give it a name.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 2: Compatibility and Comprehensiveness</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Analyze whether this theory offers potential explanations for phenomena addressed and not addressed by the scientific materialism. Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 3: Scientific Foundation of the Theory</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Elaborate an explanation of the proposed theory for a scientific audience. Include possible evidence, references to relevant publications, books, and researchers. Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 4: Comparison with Scientific Materialism</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Compare the proposed theory with scientific materialism from the perspective of the qualities of a metaphysical theory. Be profound, extensive, and assertive, without concerns about the status quo.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 5: Related Philosophical and Scientific Contributions</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Which personalities from philosophy and science have made contributions that could be relevant or aligned with the proposed theory? Be profound and extensive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 6: Dominance of Materialism in Science</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">Why has the materialist paradigm become dominant in the scientific community? Could it be limiting new advances and the search for truth? Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 7: Spiritual and Philosophical Perspectives</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">How does the proposed theory relate to different spiritual and philosophical traditions around the world? Be profound and extensive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div><div class="bg-white shadow-md rounded-lg overflow-hidden mb-4"><div class="prompt-header bg-gray-200 px-6 py-4 cursor-pointer flex justify-between items-center"><span>Prompt 8: Practical and Ethical Implications</span><svg class="chevron-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path></svg></div><div class="prompt-content px-6 py-4"><h4 class="font-bold mb-2 text-blue-500">Prompt:</h4><p class="mb-4">What could be the practical and ethical implications of the proposed theory if it were widely accepted? Be profound, extensive, and assertive.</p><h4 class="font-bold mb-2 text-blue-500">Response:</h4><div class="markdown-content"></div></div></div></div>
+</main>
+</div>
+</div>
+<footer class="text-center mt-12 mb-4 text-sm text-gray-600">
+<p>
+            © 2024 ExplainTheUniverse.org This work is licensed under the 
+            <a class="text-blue-600 hover:underline" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer" target="_blank">
+                Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+            </a>.
+            <br/>
+<span class="text-xs">(License allowing sharing and adapting the content as long as it is properly attributed and shared under the same license)</span>
+</p>
+</footer>
+<script>
+        lucide.createIcons();
+
+        // Set up the PDF download link
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadLink = document.getElementById('downloadPDF');
+            var currentPath = window.location.pathname;
+            var filename = currentPath.split('/').pop().replace('.html', '');
+            downloadLink.href = '../pdfs/' + filename + '.pdf';
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const headers = document.querySelectorAll('.prompt-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const chevron = header.querySelector('.chevron-icon');
+                    
+                    // Toggle the content visibility
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        chevron.classList.remove('rotate-180');
+                    } else {
+                        content.style.display = 'block';
+                        chevron.classList.add('rotate-180');
+                    }
+                });
+            });
+        
+            document.getElementById('expandAll').addEventListener('click', () => {
+                document.querySelectorAll('.prompt-content').forEach(content => {
+                    content.style.display = 'block';
+                });
+                document.querySelectorAll('.chevron-icon').forEach(chevron => {
+                    chevron.classList.add('rotate-180');
+                });
+            });
+        
+            document.getElementById('collapseAll').addEventListener('click', () => {
+                document.querySelectorAll('.prompt-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.querySelectorAll('.chevron-icon').forEach(chevron => {
+                    chevron.classList.remove('rotate-180');
+                });
+            });
+        });
+        </script>
+<style>
+        .markdown-content h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        .markdown-content h3 {
+            font-size: 1.2em;
+            margin-top: 1em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .markdown-content h4 {
+            font-size: 1em;
+            margin-top: 1em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .markdown-content p {
+            margin-bottom: 1em;
+        }
+        .markdown-content ul, .markdown-content ol {
+            margin-bottom: 1em;
+            padding-left: 2em;
+        }
+        .markdown-content ul {
+            list-style-type: disc;
+        }
+        .markdown-content ol {
+            list-style-type: decimal;
+        }
+        .markdown-content li {
+            margin-bottom: 0.5em;
+        }
+        .markdown-content ul ul, .markdown-content ol ol, .markdown-content ul ol, .markdown-content ol ul {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .prompt-content {
+            display: none;
+        }
+        .chevron-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+        </style>
+</body>
+</html>
