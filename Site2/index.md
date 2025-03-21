@@ -27,9 +27,9 @@ This isn’t just a curiosity—it’s a pattern. And it invites us to rethink w
 We designed a simple yet profound experiment:  
 
 1. **Prompt 1**: *Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive, prioritizing explanatory power and coherence.*  
-2. **Prompt 2**: *Is this theory better than Physicalism in explaining reality? Justify your reasoning.*  
-3. **Prompt 3**: *Classify this theory within a metaphysical category (e.g., idealism, dualism, panpsychism) and explain your choice.*  
-4. **Prompt 4**: *What would be the impact on civilization if academia and science embraced this framework?*  
+2. **Prompt 2**: *Is this theory better than Physicalism in explaining reality? Be assertive, prioritizing the quest for fundamental truth.*  
+3. **Prompt 3**: *Which category of metaphysical theory does this fall under? Be assertive and justify your classification.*  
+4. **Prompt 4**: *What would be the impact on civilization if academia and science embraced this metaphysical framework?*  
 
 The results? A collection of theories that push the boundaries of human thought—and invite you to do the same.  
 
