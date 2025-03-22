@@ -40,7 +40,7 @@ Yet, when AI is given full freedom to analyze reality, it doesn’t default to P
 - **Reality is relational, not mechanistic**  
 - **Materialism is an incomplete framework**  
 
-If AI—a neutral reasoning system—arrives at these conclusions, why does academia resist them?  
+If AI—a neutral reasoning system—arrives at these conclusions, why does mainstream academia still resist them?  
 
 **Here’s the twist:** The AI models we tested were likely trained on data dominated by Physicalist perspectives. After all, Physicalism has been the default framework in science and philosophy for centuries, and the vast majority of academic literature, textbooks, and research papers reflect this bias. If anything, we would expect the AI to default to Physicalism.  
 
@@ -48,9 +48,11 @@ But it didn’t.
 
 Instead, the AI consistently generated theories that challenge Physicalism, suggesting that it was able to transcend the biases in its training data and identify deeper, more coherent explanations for reality. This makes the results even more striking: **AI, when free to explore, rejects Physicalism despite being trained on Physicalist-dominated data.**  
 
-The answer to academia’s resistance lies in **institutional inertia and entrenched paradigms.**  
+Of course, it’s important to note that not all academics adhere to Physicalism. Thinkers like **Bernard Kastrup** (advocate of analytic idealism) and **David Chalmers** (known for his work on the "hard problem of consciousness") have made significant contributions to non-materialist frameworks. However, these voices often remain on the margins of mainstream academic discourse.  
 
-Academia often rejects non-physicalist explanations, not because they lack evidence, but because they challenge the status quo. This is why:  
+The resistance to non-physicalist explanations in academia is less about the absence of alternative ideas and more about **institutional inertia and entrenched paradigms.**  
+
+Mainstream academia often sidelines non-physicalist perspectives, not because they lack evidence, but because they challenge the status quo. This is why:  
 
 - **Subjective experience is dismissed:** Despite overwhelming empirical evidence from neuroscience, psychology, and quantum physics, academia often overlooks phenomena that don’t fit the materialist paradigm.  
 - **Funding and reputations are at stake:** Careers are built on materialist assumptions. Questioning them can mean risking credibility, research grants, and institutional power.  
