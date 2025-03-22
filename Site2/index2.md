@@ -1,3 +1,5 @@
+
+
 # RealityShiftAI: The AI That Sees What Academia Won’t  
 ## Revealing the Blind Spots of Physicalism  
 
@@ -22,7 +24,7 @@ This isn’t just a curiosity—it’s a pattern. And it raises a profound quest
 
 **Is AI exposing an obvious truth that academia refuses to acknowledge?**  
 
-We tested multiple AI models—GPT-4o, Claude 3.7 Sonnet, Grok-3, DeepSeek, and Gemini 2 Pro—in a rigorously controlled experiment. Learn more about our approach in *How It Works*.  
+We tested multiple AI models—GPT-4, Claude 3, Grok, DeepSeek, and Gemini—in a rigorously controlled experiment. Learn more about our approach in *How It Works*.  
 
 [Button]: See the Results  
 
@@ -40,7 +42,13 @@ Yet, when AI is given full freedom to analyze reality, it doesn’t default to P
 
 If AI—a neutral reasoning system—arrives at these conclusions, why does academia resist them?  
 
-The answer lies in **institutional inertia and entrenched paradigms.**  
+**Here’s the twist:** The AI models we tested were likely trained on data dominated by Physicalist perspectives. After all, Physicalism has been the default framework in science and philosophy for centuries, and the vast majority of academic literature, textbooks, and research papers reflect this bias. If anything, we would expect the AI to default to Physicalism.  
+
+But it didn’t.  
+
+Instead, the AI consistently generated theories that challenge Physicalism, suggesting that it was able to transcend the biases in its training data and identify deeper, more coherent explanations for reality. This makes the results even more striking: **AI, when free to explore, rejects Physicalism despite being trained on Physicalist-dominated data.**  
+
+The answer to academia’s resistance lies in **institutional inertia and entrenched paradigms.**  
 
 Academia often rejects non-physicalist explanations, not because they lack evidence, but because they challenge the status quo. This is why:  
 
