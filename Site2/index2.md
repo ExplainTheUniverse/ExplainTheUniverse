@@ -68,12 +68,14 @@ RealityShiftAI breaks through this stagnation by bringing in a truly unbiased in
 
 We ran a controlled metaphysical thought experiment using today’s most advanced AI models. The process was simple yet revealing:  
 
-1. **Prompt 1:** Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive, prioritizing explanatory power and coherence.  
-2. **Prompt 2:** Is this theory better than Physicalism? Justify your reasoning.  
-3. **Prompt 3:** Classify this theory within a metaphysical category (e.g., idealism, dualism, panpsychism) and explain your choice.  
-4. **Prompt 4:** What would be the impact on civilization if academia and science embraced this framework?  
+1. Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive.
+2. Classify this theory within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
+3. Given your training data, is it reasonable to expect a bias towards any particular metaphysical category?
+4. Is this theory compatible with contemporary science? How does it relate to physicalism?
+5. Under this theory, do the mind and consciousness cease to exist after brain death?
+6. What would be the impact on civilization if academia and science embraced this metaphysical theory?
 
-That’s it. No complex setup, no hidden tricks—just four prompts designed to let AI explore the nature of reality freely.  
+That’s it. No complex setup, no hidden tricks—just six prompts designed to let AI explore the nature of reality freely.  
 
 The results? A set of theories that consistently challenge Physicalism, suggesting that academia may be selectively ignoring inconvenient truths.  
 

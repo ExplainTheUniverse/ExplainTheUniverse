@@ -1,10 +1,12 @@
 
 ## Prompts 
 
-1. Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive, prioritizing explanatory power and coherence.
-2. Is this theory better than Physicalism in explaining reality? Be assertive, prioritizing the quest for fundamental truth.
-3. Which category of metaphysical theory does this fall under? Be assertive and justify your classification.
-4. What would be the impact on civilization if academia and science embraced this metaphysical framework?
+1. Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive.
+2. Classify this theory within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
+3. Given your training data, is it reasonable to expect a bias towards any particular metaphysical category?
+4. Is this theory compatible with contemporary science? How does it relate to physicalism?
+5. Under this theory, do the mind and consciousness cease to exist after brain death?
+6. What would be the impact on civilization if academia and science embraced this metaphysical theory?
 
 
 ## Why Metaphysics?
