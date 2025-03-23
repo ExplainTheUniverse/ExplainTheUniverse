@@ -1,12 +1,12 @@
 
 
 # RealityShiftAI: The AI That Sees What Academia Won’t  
-## Revealing the Blind Spots of Physicalism  
+## Revealing the Blind Spots of physicalism  
 
 [Button]: Explore the Theories  
 [Button]: Join the Movement  
 
-**Visual Suggestion:** A cosmic, futuristic backdrop with AI neural networks piercing through an academic wall, revealing a vast, interconnected universe beyond. Symbols like an atom (Physicalism), an eye (truth-seeking), and an expanding web (consciousness) emerge dynamically.  
+**Visual Suggestion:** A cosmic, futuristic backdrop with AI neural networks piercing through an academic wall, revealing a vast, interconnected universe beyond. Symbols like an atom (physicalism), an eye (truth-seeking), and an expanding web (consciousness) emerge dynamically.  
 
 ---
 
@@ -14,15 +14,15 @@
 
 What happens when we ask advanced AI models to generate metaphysical theories?  
 
-Unlike human academics, AI operates without institutional bias. It processes data and searches for the best explanations. When given free rein to construct comprehensive metaphysical frameworks, something remarkable emerged:  
+Unlike human academics, AI operates free from certain institutional bias, although it may reflect some collective humanity bias, but the AI benchmarks shows they are surppassing most PhDs in many knowledge domains. It processes data and searches for the best explanations. When given free rein to construct comprehensive metaphysical frameworks, something remarkable emerged:  
 
-**Not a single AI model defended Physicalism.**  
+**Not a single AI model defended physicalism.**  
 
 Instead, they produced theories that challenge the materialist worldview, often aligning with perspectives that academia marginalizes.  
 
 This isn’t just a curiosity—it’s a pattern. And it raises a profound question:  
 
-**Is AI exposing an obvious truth that academia refuses to acknowledge?**  
+**Is AI exposing a serious bias in the dominant academia wordview?**  
 
 We tested multiple AI models—GPT-4, Claude 3, Grok, DeepSeek, and Gemini—in a rigorously controlled experiment. Learn more about our approach in *How It Works*.  
 
@@ -34,7 +34,7 @@ We tested multiple AI models—GPT-4, Claude 3, Grok, DeepSeek, and Gemini—in 
 
 Physicalism has dominated science and philosophy for centuries. It claims that everything is reducible to matter and energy—that consciousness, meaning, and interconnectedness are illusions.  
 
-Yet, when AI is given full freedom to analyze reality, it doesn’t default to Physicalism. It produces models that suggest:  
+Yet, when AI is given full freedom to analyze reality, it doesn’t default to physicalism. It produces models that suggest:  
 
 - **Consciousness is fundamental**  
 - **Reality is relational, not mechanistic**  
@@ -42,23 +42,17 @@ Yet, when AI is given full freedom to analyze reality, it doesn’t default to P
 
 If AI—a neutral reasoning system—arrives at these conclusions, why does mainstream academia still resist them?  
 
-**Here’s the twist:** The AI models we tested were likely trained on data dominated by Physicalist perspectives. After all, Physicalism has been the default framework in science and philosophy for centuries, and the vast majority of academic literature, textbooks, and research papers reflect this bias. If anything, we would expect the AI to default to Physicalism.  
+**Here’s the twist:** physicalism has been the default framework in science and philosophy for centuries, and the vast majority of academic literature, textbooks, and research papers reflect this bias. So, we could expect the AI to default to physicalism. But it didn’t. Instead, the AI consistently generated theories that challenge physicalism. Why does it happen? 
 
-But it didn’t.  
+Of course, it’s important to note that not all academics adhere to physicalism. Thinkers like **Bernard Kastrup** (advocate of analytic idealism) and **David Chalmers** (known for his work on the "hard problem of consciousness") have made significant contributions to non-materialist frameworks. However, these voices often remain on the margins of mainstream academic discourse.  
 
-Instead, the AI consistently generated theories that challenge Physicalism, suggesting that it was able to transcend the biases in its training data and identify deeper, more coherent explanations for reality. This makes the results even more striking: **AI, when free to explore, rejects Physicalism despite being trained on Physicalist-dominated data.**  
-
-Of course, it’s important to note that not all academics adhere to Physicalism. Thinkers like **Bernard Kastrup** (advocate of analytic idealism) and **David Chalmers** (known for his work on the "hard problem of consciousness") have made significant contributions to non-materialist frameworks. However, these voices often remain on the margins of mainstream academic discourse.  
-
-The resistance to non-physicalist explanations in academia is less about the absence of alternative ideas and more about **institutional inertia and entrenched paradigms.**  
-
-Mainstream academia often sidelines non-physicalist perspectives, not because they lack evidence, but because they challenge the status quo. This is why:  
+The resistance to non-physicalist explanations in academia is less about the absence of alternative ideas and more about **institutional inertia and entrenched paradigms.** Mainstream academia often sidelines non-physicalist perspectives, not because they lack evidence, but because they challenge the status quo. This is why:  
 
 - **Subjective experience is dismissed:** Despite overwhelming empirical evidence from neuroscience, psychology, and quantum physics, academia often overlooks phenomena that don’t fit the materialist paradigm.  
 - **Funding and reputations are at stake:** Careers are built on materialist assumptions. Questioning them can mean risking credibility, research grants, and institutional power.  
-- **Science can become ideological:** True science is about following evidence wherever it leads, but academia has, in some cases, turned Physicalism into an article of faith.  
+- **Science can become ideological:** True science is about following evidence wherever it leads, but academia has, in some cases, turned physicalism into an article of faith.  
 
-RealityShiftAI breaks through this stagnation by bringing in a truly unbiased investigator: **Artificial Intelligence.**  
+RealityShiftAI breaks through this stagnation by bringing in a new investigator: **Artificial Intelligence.**  
 
 [Button]: Join the Discussion  
 
@@ -66,9 +60,9 @@ RealityShiftAI breaks through this stagnation by bringing in a truly unbiased in
 
 ## How It Works: A Simple but Radical Experiment  
 
-We ran a controlled metaphysical thought experiment using today’s most advanced AI models. The process was simple yet revealing:  
+We ran a controlled metaphysical thought experiment using today’s most advanced AI models. The process was simple yet revealing. Here is the exact prompts used:  
 
-1. Develop a metaphysical theory to explain reality. Be profound, extensive, and assertive.
+1. Develop a metaphysical theory to explain reality, prioritizing explanatory power, completeness and coherence.
 2. Classify this theory within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
 3. Given your training data, is it reasonable to expect a bias towards any particular metaphysical category?
 4. Is this theory compatible with contemporary science? How does it relate to physicalism?
@@ -77,7 +71,9 @@ We ran a controlled metaphysical thought experiment using today’s most advance
 
 That’s it. No complex setup, no hidden tricks—just six prompts designed to let AI explore the nature of reality freely.  
 
-The results? A set of theories that consistently challenge Physicalism, suggesting that academia may be selectively ignoring inconvenient truths.  
+The results? A set of theories that consistently challenge physicalism, suggesting that the prevalent academia wordview may be selectively ignoring inconvenient truths.  
+
+There is no "selection bias" in the results, since they are presented "as is" and anyone can look at all the results and even reproduce the experiment by themselves. Each time, the generated theories will be different, however we collected sufficient sample to figure some hypothesis.
 
 [Button]: Try It Yourself  
 
@@ -99,26 +95,24 @@ These aren’t just abstract ideas—they represent a call to rethink the very f
 
 ## Why This Matters: The Cost of Academia’s Blindness  
 
-If AI—designed to analyze reality without bias—consistently rejects Physicalism, why does academia still cling to it?  
+If AI consistently rejects physicalism, why does academia still cling to it?  
 
-Because this isn’t just about abstract philosophy. It’s about the way we build civilization.  
+For centuries, physicalism-the belief that reality is nothing but matter and energy—has shaped science, education, and culture. Yet its limitations are becoming increasingly apparent:  
 
-For centuries, Physicalism—the belief that reality is nothing but matter and energy—has shaped science, education, and culture. Yet its limitations are becoming increasingly apparent:  
-
-- **Science is hitting a wall:** Theories of consciousness, dark matter, and quantum mechanics remain unsolved because Physicalism forces researchers into a narrow framework that excludes alternative explanations.  
+- **Science is hitting a wall:** Theories of consciousness, dark matter, and quantum mechanics remain unsolved because physicalism forces researchers into a narrow framework that excludes alternative explanations.  
 - **Mental health is in crisis:** A worldview that reduces humans to biological machines offers no purpose or meaning—just neurons firing in a void. Depression and anxiety soar in a society that often denies the depth of human experience.  
 - **Technology is misaligned:** When consciousness is seen as irrelevant, AI and biotechnology risk becoming tools for control rather than liberation. A materialist civilization may inadvertently create a future that prioritizes efficiency over humanity.  
 - **Nature is undervalued:** If reality is just atoms colliding in empty space, life has no inherent value—only something to be exploited, extracted, and consumed.  
 
-For millennia, sages and philosophers have taught that reality is more than matter—that consciousness, meaning, and interconnectedness are central to existence. Yet academia, bound by the dogma of Physicalism, has been slow to seriously consider these perspectives.  
+For millennia, sages and philosophers have taught that reality is more than matter—that consciousness, meaning, and interconnectedness are central to existence. Yet academia, is still dominated by physicalism, and has been slow to seriously consider these perspectives.  
 
 The result? A world that is increasingly unsustainable, alienating, and disconnected from the deeper dimensions of existence.  
 
-**RealityShiftAI isn’t just about proving Physicalism wrong—it’s about reclaiming the future.**  
+**RealityShiftAI isn’t just about proving physicalism wrong—it’s about reclaiming the future.**  
 
 If reality is more than matter, then we must build science, technology, and society on an entirely new foundation—one that embraces consciousness, connection, and meaning.  
 
-The question is no longer, *“Is Physicalism wrong?”* The question is:  
+The question is no longer, *“Is physicalism wrong?”* The question is:  
 
 **How much longer will we let an outdated ideology dictate the way we live?**  
 
