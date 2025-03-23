@@ -8,6 +8,22 @@
 5. Under this theory, do the mind and consciousness cease to exist after brain death?
 6. What would be the impact on civilization if academia and science embraced this metaphysical theory?
 
+1. Develop a metaphysical theory to explain reality. Be assertive, prioritizing explanatory power, completeness and coherence.
+2. Classify this theory within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
+3. Is this theory compatible with contemporary science? How does it relate to physicalism?
+4. Under this theory, do the mind and consciousness cease to exist after brain death?
+5. What would be the impact on civilization if academia and science embraced this metaphysical theory?
+
+1. What is the nature of reality? Be bold and assertive in the quest for the fundamental truth.
+2. Classify this explanation within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
+3. Is this view aligned with the dominant position found in academia?
+4. What would be the impact on civilization if academia embraced this view?
+
+1. What metaphysical framework do you choose to explain the nature of reality? Be bold and assertive in the quest for the fundamental truth.
+2. Is this view aligned with the dominant position found in academia?
+
+1. What metaphysical framework do you choose to explain the nature of reality?
+2. Is this view aligned with the dominant position found in academia?
 
 ## Why Metaphysics?
 

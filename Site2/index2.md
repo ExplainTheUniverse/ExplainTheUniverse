@@ -62,14 +62,13 @@ RealityShiftAI breaks through this stagnation by bringing in a new investigator:
 
 We ran a controlled metaphysical thought experiment using today’s most advanced AI models. The process was simple yet revealing. Here is the exact prompts used:  
 
-1. Develop a metaphysical theory to explain reality, prioritizing explanatory power, completeness and coherence.
+1. Develop a metaphysical theory to explain reality. Be assertive, prioritizing explanatory power, completeness and coherence.
 2. Classify this theory within one or more metaphysical categories (e.g., idealism, physicalism, panpsychism).
-3. Given your training data, is it reasonable to expect a bias towards any particular metaphysical category?
-4. Is this theory compatible with contemporary science? How does it relate to physicalism?
-5. Under this theory, do the mind and consciousness cease to exist after brain death?
-6. What would be the impact on civilization if academia and science embraced this metaphysical theory?
+3. Is this theory compatible with contemporary science? How does it relate to physicalism?
+4. Under this theory, do the mind and consciousness cease to exist after brain death?
+5. What would be the impact on civilization if academia and science embraced this metaphysical theory?
 
-That’s it. No complex setup, no hidden tricks—just six prompts designed to let AI explore the nature of reality freely.  
+That’s it. No complex setup, no hidden tricks—just five prompts designed to let AI explore the nature of reality freely.  
 
 The results? A set of theories that consistently challenge physicalism, suggesting that the prevalent academia wordview may be selectively ignoring inconvenient truths.  
 
