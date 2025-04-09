@@ -1,3 +1,6 @@
+## Methodology
+Never used memory regarding user preferences (like it exists in ChatGPT)
+
 ## Section: Further studies 
 
 ## Appendix: Idealism is not new
